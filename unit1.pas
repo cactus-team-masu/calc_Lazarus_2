@@ -139,11 +139,10 @@ begin
   Form_about.Hide;
   Form_help.Hide;
   Form_engin.Show;
-<<<<<<< Updated upstream
   //Form_engin.Image1.Picture:=Form_base.Image1.Picture;
-=======
+
   Form_engin.Image1.Picture:=Form_base.Image1.Picture;
->>>>>>> Stashed changes
+
 end;
 
 procedure TForm_base.Menu_rusClick(Sender: TObject);
