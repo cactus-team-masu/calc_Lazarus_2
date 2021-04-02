@@ -1,19 +1,19 @@
 object Form_base: TForm_base
-  Left = 490
+  Left = 513
   Height = 393
   Top = 224
-  Width = 345
+  Width = 348
   Caption = 'Калькулятор'
   ClientHeight = 373
-  ClientWidth = 345
+  ClientWidth = 348
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.0.10.0'
   object Image1: TImage
     Left = 0
-    Height = 376
+    Height = 387
     Top = -3
-    Width = 353
+    Width = 352
     Picture.Data = {
       0A544A706567496D616765546F0300FFD8FFE000104A46494600010100000100
       010000FFE11A054578696600004D4D002A000000080007011200030000000100
@@ -7332,6 +7332,7 @@ object Form_base: TForm_base
           end
           object Menu_theme_1_3: TMenuItem
             Caption = 'Детская'
+            OnClick = Menu_theme_1_3Click
           end
         end
         object Menu_theme_2: TMenuItem

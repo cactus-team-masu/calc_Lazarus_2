@@ -1,7 +1,7 @@
 object Form_engin: TForm_engin
-  Left = 798
+  Left = 680
   Height = 437
-  Top = 184
+  Top = 515
   Width = 732
   Caption = 'Расширенный режим'
   ClientHeight = 417

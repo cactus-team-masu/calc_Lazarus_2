@@ -188,7 +188,7 @@ begin
   Form_engin.Hide;
   Form_about.Hide;
   Form_help.Hide;
-  //Form_base.Image1.Picture:=Form_engin.Image1.Picture;
+  Form_base.Image1.Picture:=Form_engin.Image1.Picture;
 end;
 
 procedure TForm_engin.M_engClick(Sender: TObject);
