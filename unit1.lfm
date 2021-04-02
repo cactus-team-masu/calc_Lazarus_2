@@ -1,19 +1,20 @@
 object Form_base: TForm_base
-  Left = 506
+  Left = 376
   Height = 393
-  Top = 354
+  Top = 199
   Width = 348
   Caption = 'Калькулятор'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 373
+  ClientWidth = 348
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.0.10.0'
   object Image1: TImage
-    Left = 0
+    Left = -4
     Height = 387
-    Top = -3
+    Top = 0
     Width = 352
+    OnClick = Image1Click
     Picture.Data = {
       0A544A706567496D616765546F0300FFD8FFE000104A46494600010100000100
       010000FFE11A054578696600004D4D002A000000080007011200030000000100
@@ -7067,15 +7068,6 @@ object Form_base: TForm_base
     ParentFont = False
     TabOrder = 0
   end
-  object Button_percent: TSpeedButton
-    Left = 24
-    Height = 29
-    Top = 168
-    Width = 72
-    Caption = '%'
-    OnClick = Button_percentClick
-    ParentFont = False
-  end
   object Button_squaring: TSpeedButton
     Left = 104
     Height = 29
@@ -7089,7 +7081,7 @@ object Form_base: TForm_base
     Left = 24
     Height = 29
     Top = 208
-    Width = 72
+    Width = 70
     Caption = '1'
     OnClick = ButtonClick
     ParentFont = False
@@ -7282,6 +7274,19 @@ object Form_base: TForm_base
     ParentColor = False
     ParentFont = False
   end
+  object Button_percent: TSpeedButton
+    Left = 24
+    Height = 29
+    Top = 168
+    Width = 70
+    BorderSpacing.Around = 1
+    BorderSpacing.CellAlignHorizontal = ccaCenter
+    BorderSpacing.CellAlignVertical = ccaCenter
+    Caption = '%'
+    Color = clDefault
+    OnClick = Button_percentClick
+    ParentFont = False
+  end
   object MainMenu1: TMainMenu
     Left = 272
     Top = 88
@@ -7340,9 +7345,11 @@ object Form_base: TForm_base
           Caption = 'Для кнопок'
           object Menu_theme_2_1: TMenuItem
             Caption = 'Светлая'
+            OnClick = Menu_theme_2_1Click
           end
           object Menu_theme_2_2: TMenuItem
             Caption = 'Темная'
+            OnClick = Menu_theme_2_2Click
           end
         end
       end
