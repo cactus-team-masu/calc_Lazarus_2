@@ -139,8 +139,6 @@ begin
   Form_about.Hide;
   Form_help.Hide;
   Form_engin.Show;
-  //Form_engin.Image1.Picture:=Form_base.Image1.Picture;
-
   Form_engin.Image1.Picture:=Form_base.Image1.Picture;
 
 end;
