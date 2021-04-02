@@ -5,8 +5,8 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus,
-  Buttons;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus, LCLTranslator,
+  Buttons, ExtCtrls;
 
 type
 
@@ -24,8 +24,14 @@ type
     Button_sum: TSpeedButton;
     Button_equally: TSpeedButton;
     Edit1: TEdit;
+    Image1: TImage;
+    Label1: TLabel;
     MainMenu1: TMainMenu;
-    Menu_theme_3: TMenuItem;
+    Menu_theme_2_1: TMenuItem;
+    Menu_theme_2_2: TMenuItem;
+    Menu_theme_1_3: TMenuItem;
+    Menu_theme_1_1: TMenuItem;
+    Menu_theme_1_2: TMenuItem;
     Menu_theme_2: TMenuItem;
     Menu_theme_1: TMenuItem;
     Menu_themes: TMenuItem;
@@ -62,14 +68,18 @@ type
     procedure Button_delClick(Sender: TObject);
     procedure Button_dotClick(Sender: TObject);
     procedure Button_equallyClick(Sender: TObject);
-    procedure Button_percent1Click(Sender: TObject);
     procedure Button_percentClick(Sender: TObject);
     procedure Button_sqrtClick(Sender: TObject);
     procedure Button_squaringClick(Sender: TObject);
     procedure Button_sumClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Menu_1_1_copyClick(Sender: TObject);
+    procedure Menu_1_2_pasteClick(Sender: TObject);
+    procedure Menu_3_1_helpClick(Sender: TObject);
+    procedure Menu_3_2_aboutClick(Sender: TObject);
+    procedure Menu_engClick(Sender: TObject);
     procedure Menu_enginClick(Sender: TObject);
+    procedure Menu_rusClick(Sender: TObject);
   private
 
   public
@@ -83,7 +93,7 @@ var
 
 implementation
 {$R *.lfm}
- uses Unit2;
+ uses Unit2, Unit4, Unit3;
 { TForm_base }
 
 procedure TForm_base.FormCreate(Sender: TObject);
@@ -91,9 +101,31 @@ begin
 
 end;
 
+
 procedure TForm_base.Menu_1_1_copyClick(Sender: TObject);
 begin
+  Edit1.SelectAll;
+  Edit1.CopyToClipboard;
+end;
 
+procedure TForm_base.Menu_1_2_pasteClick(Sender: TObject);
+begin
+  Edit1.PasteFromClipboard;
+end;
+
+procedure TForm_base.Menu_3_1_helpClick(Sender: TObject);
+begin
+  Unit3.Form_help.show;
+end;
+
+procedure TForm_base.Menu_3_2_aboutClick(Sender: TObject);
+begin
+  Unit4.Form_about.show;
+end;
+
+procedure TForm_base.Menu_engClick(Sender: TObject);
+begin
+  SetDefaultLang('en','lang');
 end;
 
 
@@ -101,7 +133,15 @@ end;
 procedure TForm_base.Menu_enginClick(Sender: TObject);
 begin
   Form_base.Hide;
+  Form_about.Hide;
+  Form_help.Hide;
   Form_engin.Show;
+  //Form_engin.Image1.Picture:=Form_base.Image1.Picture;
+end;
+
+procedure TForm_base.Menu_rusClick(Sender: TObject);
+begin
+  SetDefaultLang('ru','lang');
 end;
 
 procedure TForm_base.ButtonClick(Sender: TObject);    //кнопки цифр
@@ -135,10 +175,6 @@ begin
                         end;
 end;
 
-procedure TForm_base.Button_percent1Click(Sender: TObject);
-begin
-
-end;
 
 procedure TForm_base.Button_percentClick(Sender: TObject);
 begin
