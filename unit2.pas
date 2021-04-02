@@ -5,7 +5,7 @@ unit Unit2;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus,
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus, LCLTranslator,
   Buttons, Math;
 
 type
@@ -49,7 +49,11 @@ type
     Label1: TLabel;
     Label2: TLabel;
     MainMenu1: TMainMenu;
-    M_theme_3: TMenuItem;
+    M_theme_2_1: TMenuItem;
+    M_theme_2_2: TMenuItem;
+    M_theme_1_3: TMenuItem;
+    M_theme_1_1: TMenuItem;
+    M_theme_1_2: TMenuItem;
     M_theme_2: TMenuItem;
     M_theme_1: TMenuItem;
     Menu_themes: TMenuItem;
@@ -90,7 +94,14 @@ type
     procedure Button_stepenClick(Sender: TObject);
     procedure Button_sumClick(Sender: TObject);
     procedure Button_tgClick(Sender: TObject);
+    procedure M_1_copyClick(Sender: TObject);
+    procedure M_1_pasteClick(Sender: TObject);
+    procedure M_3_1_aboutClick(Sender: TObject);
+    procedure M_3_1_helpClick(Sender: TObject);
     procedure M_baseClick(Sender: TObject);
+    procedure M_engClick(Sender: TObject);
+    procedure M_rusClick(Sender: TObject);
+    procedure M_theme_1Click(Sender: TObject);
 
 
 
@@ -108,7 +119,7 @@ var
 
 
 implementation
- uses Unit1;
+ uses Unit1, Unit4, Unit3;
 {$R *.lfm}
 
 { TForm_engin }
@@ -146,10 +157,48 @@ begin
   else Label1.Caption := 'No';
 end;
 
+procedure TForm_engin.M_1_copyClick(Sender: TObject);
+begin
+  Edit1.SelectAll;
+  Edit1.CopyToClipboard;
+end;
+
+procedure TForm_engin.M_1_pasteClick(Sender: TObject);
+begin
+  Edit1.PasteFromClipboard;
+end;
+
+procedure TForm_engin.M_3_1_aboutClick(Sender: TObject);
+begin
+  Unit4.Form_about.show
+end;
+
+procedure TForm_engin.M_3_1_helpClick(Sender: TObject);
+begin
+  Unit3.Form_help.show
+end;
+
 procedure TForm_engin.M_baseClick(Sender: TObject);
 begin
   Form_base.Show;
   Form_engin.Hide;
+  Form_about.Hide;
+  Form_help.Hide;
+end;
+
+procedure TForm_engin.M_engClick(Sender: TObject);
+begin
+  SetDefaultLang('en','lang');
+end;
+
+procedure TForm_engin.M_rusClick(Sender: TObject);
+begin
+  SetDefaultLang('ru','lang');
+end;
+
+procedure TForm_engin.M_theme_1Click(Sender: TObject);
+begin
+
 end;
 
 

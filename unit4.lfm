@@ -1,0 +1,33 @@
+object Form_about: TForm_about
+  Left = 885
+  Height = 170
+  Top = 261
+  Width = 515
+  Caption = 'О программе'
+  ClientHeight = 170
+  ClientWidth = 515
+  Constraints.MaxHeight = 170
+  Constraints.MaxWidth = 515
+  Constraints.MinHeight = 170
+  Constraints.MinWidth = 515
+  DesignTimePPI = 120
+  Position = poMainFormCenter
+  LCLVersion = '2.0.8.0'
+  object Label1: TLabel
+    Left = 0
+    Height = 168
+    Top = 0
+    Width = 515
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'Калькулятор'#13#10#13#10'Версия: 1.0'#13#10'Создано Cactus Team'#13#10'Ссылка на репозиторий: '#13#10'https://github.com/cactus-team-masu/calc_lazarus'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end

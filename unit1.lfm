@@ -1,22 +1,23 @@
 object Form_base: TForm_base
   Left = 1074
-  Height = 393
+  Height = 491
   Top = 466
-  Width = 345
+  Width = 431
   Caption = 'Калькулятор'
-  ClientHeight = 373
-  ClientWidth = 345
+  ClientHeight = 466
+  ClientWidth = 431
+  DesignTimePPI = 120
   Menu = MainMenu1
   OnCreate = FormCreate
-  LCLVersion = '2.0.10.0'
+  LCLVersion = '2.0.8.0'
   object Edit1: TEdit
-    Left = 24
-    Height = 55
-    Top = 24
-    Width = 312
+    Left = 30
+    Height = 68
+    Top = 30
+    Width = 390
     Font.CharSet = RUSSIAN_CHARSET
     Font.Color = clBlack
-    Font.Height = -35
+    Font.Height = -44
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -24,243 +25,290 @@ object Form_base: TForm_base
     TabOrder = 0
   end
   object Button_percent: TSpeedButton
-    Left = 24
-    Height = 29
-    Top = 168
-    Width = 72
+    Left = 30
+    Height = 36
+    Top = 210
+    Width = 90
     Caption = '%'
     OnClick = Button_percentClick
+    ParentFont = False
   end
   object Button_squaring: TSpeedButton
-    Left = 104
-    Height = 29
-    Top = 168
-    Width = 72
+    Left = 130
+    Height = 36
+    Top = 210
+    Width = 90
     Caption = '^2'
     OnClick = Button_squaringClick
+    ParentFont = False
   end
   object Button_1: TSpeedButton
-    Left = 24
-    Height = 29
-    Top = 208
-    Width = 72
+    Left = 30
+    Height = 36
+    Top = 260
+    Width = 90
     Caption = '1'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_2: TSpeedButton
-    Left = 104
-    Height = 29
-    Top = 208
-    Width = 72
+    Left = 130
+    Height = 36
+    Top = 260
+    Width = 90
     Caption = '2'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_3: TSpeedButton
-    Left = 184
-    Height = 29
-    Top = 208
-    Width = 72
+    Left = 230
+    Height = 36
+    Top = 260
+    Width = 90
     Caption = '3'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_4: TSpeedButton
-    Left = 24
-    Height = 29
-    Top = 248
-    Width = 72
+    Left = 30
+    Height = 36
+    Top = 310
+    Width = 90
     Caption = '4'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_5: TSpeedButton
-    Left = 104
-    Height = 29
-    Top = 248
-    Width = 72
+    Left = 130
+    Height = 36
+    Top = 310
+    Width = 90
     Caption = '5'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_6: TSpeedButton
-    Left = 184
-    Height = 29
-    Top = 248
-    Width = 72
+    Left = 230
+    Height = 36
+    Top = 310
+    Width = 90
     Caption = '6'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_7: TSpeedButton
-    Left = 24
-    Height = 29
-    Top = 288
-    Width = 72
+    Left = 30
+    Height = 36
+    Top = 360
+    Width = 90
     Caption = '7'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_8: TSpeedButton
-    Left = 104
-    Height = 29
-    Top = 288
-    Width = 72
+    Left = 130
+    Height = 36
+    Top = 360
+    Width = 90
     Caption = '8'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_9: TSpeedButton
-    Left = 184
-    Height = 29
-    Top = 288
-    Width = 72
+    Left = 230
+    Height = 36
+    Top = 360
+    Width = 90
     Caption = '9'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_0: TSpeedButton
-    Left = 104
-    Height = 29
-    Top = 328
-    Width = 72
+    Left = 130
+    Height = 36
+    Top = 410
+    Width = 90
     Caption = '0'
     OnClick = ButtonClick
+    ParentFont = False
   end
   object Button_sqrt: TSpeedButton
-    Left = 184
-    Height = 29
-    Top = 168
-    Width = 72
+    Left = 230
+    Height = 36
+    Top = 210
+    Width = 90
     Caption = 'sqrt'
     OnClick = Button_sqrtClick
+    ParentFont = False
   end
   object Button_changing_sign: TSpeedButton
-    Left = 24
-    Height = 29
-    Top = 328
-    Width = 72
+    Left = 30
+    Height = 36
+    Top = 410
+    Width = 90
     Caption = '+/-'
     OnClick = Button_changing_signClick
+    ParentFont = False
   end
   object Button_dot: TSpeedButton
-    Left = 184
-    Height = 29
-    Top = 328
-    Width = 72
+    Left = 230
+    Height = 36
+    Top = 410
+    Width = 90
     Caption = '.'
     OnClick = Button_dotClick
+    ParentFont = False
   end
   object Button_ce: TSpeedButton
-    Left = 104
-    Height = 29
-    Top = 128
-    Width = 72
+    Left = 130
+    Height = 36
+    Top = 160
+    Width = 90
     Caption = 'ce'
     OnClick = Button_ceClick
+    ParentFont = False
   end
   object Button_c: TSpeedButton
-    Left = 184
-    Height = 29
-    Top = 128
-    Width = 72
+    Left = 230
+    Height = 36
+    Top = 160
+    Width = 90
     Caption = 'c'
     OnClick = Button_cClick
+    ParentFont = False
   end
   object Button_del: TSpeedButton
-    Left = 264
-    Height = 29
-    Top = 128
-    Width = 72
+    Left = 330
+    Height = 36
+    Top = 160
+    Width = 90
     Caption = 'del'
     OnClick = Button_delClick
+    ParentFont = False
   end
   object Button_division: TSpeedButton
-    Left = 264
-    Height = 29
-    Top = 168
-    Width = 72
+    Left = 330
+    Height = 36
+    Top = 210
+    Width = 90
     Caption = '/'
     OnClick = Button_sumClick
+    ParentFont = False
   end
   object Button_multipl: TSpeedButton
-    Left = 264
-    Height = 29
-    Top = 208
-    Width = 72
+    Left = 330
+    Height = 36
+    Top = 260
+    Width = 90
     Caption = '*'
     OnClick = Button_sumClick
+    ParentFont = False
   end
   object Button_diff: TSpeedButton
-    Left = 264
-    Height = 29
-    Top = 250
-    Width = 72
+    Left = 330
+    Height = 36
+    Top = 312
+    Width = 90
     Caption = '-'
     OnClick = Button_sumClick
+    ParentFont = False
   end
   object Button_sum: TSpeedButton
-    Left = 264
-    Height = 29
-    Top = 288
-    Width = 72
+    Left = 330
+    Height = 36
+    Top = 360
+    Width = 90
     Caption = '+'
     OnClick = Button_sumClick
+    ParentFont = False
   end
   object Button_equally: TSpeedButton
-    Left = 264
-    Height = 29
-    Top = 328
-    Width = 72
+    Left = 330
+    Height = 36
+    Top = 410
+    Width = 90
     Caption = '='
     OnClick = Button_equallyClick
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 1
+    Top = 112
+    Width = 1
+    ParentColor = False
   end
   object MainMenu1: TMainMenu
-    Left = 272
-    Top = 88
+    left = 340
+    top = 110
     object Menu_1_calc: TMenuItem
-      Caption = 'Menu_1_calc'
+      Caption = 'Калькулятор'
       object Menu_1_1_copy: TMenuItem
-        Caption = 'Menu_1_1_copy'
+        Caption = 'Копировать'
         OnClick = Menu_1_1_copyClick
       end
       object Menu_1_2_paste: TMenuItem
-        Caption = 'Menu_1_2_paste'
+        Caption = 'Вставить'
+        OnClick = Menu_1_2_pasteClick
       end
     end
     object Menu_2_mode: TMenuItem
-      Caption = 'Menu_2_mode'
+      Caption = 'Вид'
       object Menu_2_1_base: TMenuItem
-        Caption = 'Menu_2_1_type'
+        Caption = 'Режим'
         object Menu_base: TMenuItem
-          Caption = 'Menu_base'
+          Caption = 'Обычный'
         end
         object Menu_engin: TMenuItem
-          Caption = 'Menu_engin'
+          Caption = 'Расширенный'
           OnClick = Menu_enginClick
         end
       end
       object Menu_2_2_lang: TMenuItem
-        Caption = 'Menu_2_2_lang'
+        Caption = 'Язык'
         object Menu_rus: TMenuItem
-          Caption = 'Menu_rus'
+          Caption = 'Русский'
+          OnClick = Menu_rusClick
         end
         object Menu_eng: TMenuItem
-          Caption = 'Menu_eng'
+          Caption = 'English'
+          OnClick = Menu_engClick
         end
       end
       object Menu_themes: TMenuItem
-        Caption = 'Menu_themes'
+        Caption = 'Тема'
         object Menu_theme_1: TMenuItem
-          Caption = 'Menu_theme_1'
+          Caption = 'Для фона'
+          object Menu_theme_1_1: TMenuItem
+            Caption = 'Светлая'
+          end
+          object Menu_theme_1_2: TMenuItem
+            Caption = 'Темная'
+          end
+          object Menu_theme_1_3: TMenuItem
+            Caption = 'Детская'
+          end
         end
         object Menu_theme_2: TMenuItem
-          Caption = 'Menu_theme_2'
-        end
-        object Menu_theme_3: TMenuItem
-          Caption = 'Menu_theme_3'
+          Caption = 'Для кнопок'
+          object Menu_theme_2_1: TMenuItem
+            Caption = 'Светлая'
+          end
+          object Menu_theme_2_2: TMenuItem
+            Caption = 'Темная'
+          end
         end
       end
     end
     object Menu_3_help: TMenuItem
-      Caption = 'Menu_3_help'
+      Caption = 'Справка'
       object Menu_3_1_help: TMenuItem
-        Caption = 'Menu_3_1_help'
+        Caption = 'Справка'
+        OnClick = Menu_3_1_helpClick
       end
       object Menu_3_2_about: TMenuItem
-        Caption = 'Menu_3_2_about'
+        Caption = 'О программе'
+        OnClick = Menu_3_2_aboutClick
       end
     end
   end
