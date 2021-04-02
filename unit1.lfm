@@ -1,7 +1,7 @@
 object Form_base: TForm_base
-  Left = 823
+  Left = 490
   Height = 393
-  Top = 220
+  Top = 224
   Width = 345
   Caption = 'Калькулятор'
   ClientHeight = 373
@@ -7325,6 +7325,7 @@ object Form_base: TForm_base
           Caption = 'Для фона'
           object Menu_theme_1_1: TMenuItem
             Caption = 'Светлая'
+            OnClick = Menu_theme_1_1Click
           end
           object Menu_theme_1_2: TMenuItem
             Caption = 'Темная'
