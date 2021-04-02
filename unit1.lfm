@@ -1,7 +1,13 @@
 object Form_base: TForm_base
+<<<<<<< Updated upstream
   Left = 1074
   Height = 393
   Top = 466
+=======
+  Left = 552
+  Height = 393
+  Top = 199
+>>>>>>> Stashed changes
   Width = 345
   Caption = 'Калькулятор'
   ClientHeight = 373
@@ -10,10 +16,17 @@ object Form_base: TForm_base
   OnCreate = FormCreate
   LCLVersion = '2.0.10.0'
   object Image1: TImage
+<<<<<<< Updated upstream
     Left = -17
     Height = 384
     Top = -11
     Width = 362
+=======
+    Left = 0
+    Height = 376
+    Top = 0
+    Width = 352
+>>>>>>> Stashed changes
     Picture.Data = {
       0A544A706567496D616765546F0300FFD8FFE000104A46494600010100000100
       010000FFE11A054578696600004D4D002A000000080007011200030000000100
@@ -7325,12 +7338,15 @@ object Form_base: TForm_base
           Caption = 'Для фона'
           object Menu_theme_1_1: TMenuItem
             Caption = 'Светлая'
+            OnClick = Menu_theme_1_1Click
           end
           object Menu_theme_1_2: TMenuItem
             Caption = 'Темная'
+            OnClick = Menu_theme_1_2Click
           end
           object Menu_theme_1_3: TMenuItem
             Caption = 'Детская'
+            OnClick = Menu_theme_1_3Click
           end
         end
         object Menu_theme_2: TMenuItem

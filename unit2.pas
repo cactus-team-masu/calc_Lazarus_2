@@ -103,6 +103,9 @@ type
     procedure M_engClick(Sender: TObject);
     procedure M_rusClick(Sender: TObject);
     procedure M_theme_1Click(Sender: TObject);
+    procedure M_theme_1_1Click(Sender: TObject);
+    procedure M_theme_1_2Click(Sender: TObject);
+    procedure M_theme_1_3Click(Sender: TObject);
 
 
 
@@ -200,6 +203,21 @@ end;
 procedure TForm_engin.M_theme_1Click(Sender: TObject);
 begin
 
+end;
+
+procedure TForm_engin.M_theme_1_1Click(Sender: TObject);
+begin
+  Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\light.jpg');
+end;
+
+procedure TForm_engin.M_theme_1_2Click(Sender: TObject);
+begin
+  Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\dark.jpg');
+end;
+
+procedure TForm_engin.M_theme_1_3Click(Sender: TObject);
+begin
+   Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\children.jpg');
 end;
 
 

@@ -80,6 +80,9 @@ type
     procedure Menu_engClick(Sender: TObject);
     procedure Menu_enginClick(Sender: TObject);
     procedure Menu_rusClick(Sender: TObject);
+    procedure Menu_theme_1_1Click(Sender: TObject);
+    procedure Menu_theme_1_2Click(Sender: TObject);
+    procedure Menu_theme_1_3Click(Sender: TObject);
   private
 
   public
@@ -136,12 +139,31 @@ begin
   Form_about.Hide;
   Form_help.Hide;
   Form_engin.Show;
+<<<<<<< Updated upstream
   //Form_engin.Image1.Picture:=Form_base.Image1.Picture;
+=======
+  Form_engin.Image1.Picture:=Form_base.Image1.Picture;
+>>>>>>> Stashed changes
 end;
 
 procedure TForm_base.Menu_rusClick(Sender: TObject);
 begin
   SetDefaultLang('ru','lang');
+end;
+
+procedure TForm_base.Menu_theme_1_1Click(Sender: TObject); //светлая тема фона осн.окна
+begin
+  Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\light.jpg');
+end;
+
+procedure TForm_base.Menu_theme_1_2Click(Sender: TObject); //темная тема фона осн.окна
+begin
+  Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\dark.jpg');
+end;
+
+procedure TForm_base.Menu_theme_1_3Click(Sender: TObject);
+begin
+  Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\children.jpg');
 end;
 
 procedure TForm_base.ButtonClick(Sender: TObject);    //кнопки цифр

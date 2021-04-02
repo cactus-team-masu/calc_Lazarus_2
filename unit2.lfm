@@ -1,4 +1,5 @@
 object Form_engin: TForm_engin
+<<<<<<< Updated upstream
   Left = 798
   Height = 451
   Top = 184
@@ -6,13 +7,29 @@ object Form_engin: TForm_engin
   Caption = 'Расширенный режим'
   ClientHeight = 431
   ClientWidth = 748
+=======
+  Left = 745
+  Height = 437
+  Top = 324
+  Width = 732
+  Caption = 'Расширенный режим'
+  ClientHeight = 417
+  ClientWidth = 732
+>>>>>>> Stashed changes
   Menu = MainMenu1
   LCLVersion = '2.0.10.0'
   object Image1: TImage
     Left = 0
+<<<<<<< Updated upstream
     Height = 504
     Top = 0
     Width = 816
+=======
+    Height = 664
+    Top = -8
+    Width = 996
+    AutoSize = True
+>>>>>>> Stashed changes
     Picture.Data = {
       0A544A706567496D616765546F0300FFD8FFE000104A46494600010100000100
       010000FFE11A054578696600004D4D002A000000080007011200030000000100
@@ -7055,7 +7072,11 @@ object Form_engin: TForm_engin
   object Edit1: TEdit
     Left = 32
     Height = 55
+<<<<<<< Updated upstream
     Top = 16
+=======
+    Top = 24
+>>>>>>> Stashed changes
     Width = 680
     Font.CharSet = RUSSIAN_CHARSET
     Font.Color = clBlack
@@ -7440,12 +7461,15 @@ object Form_engin: TForm_engin
           OnClick = M_theme_1Click
           object M_theme_1_1: TMenuItem
             Caption = 'Светлая'
+            OnClick = M_theme_1_1Click
           end
           object M_theme_1_2: TMenuItem
             Caption = 'Темная'
+            OnClick = M_theme_1_2Click
           end
           object M_theme_1_3: TMenuItem
             Caption = 'Детская'
+            OnClick = M_theme_1_3Click
           end
         end
         object M_theme_2: TMenuItem
