@@ -1,11 +1,11 @@
 object Form_engin: TForm_engin
-  Left = 680
+  Left = 658
   Height = 437
-  Top = 515
+  Top = 225
   Width = 732
   Caption = 'Расширенный режим'
-  ClientHeight = 417
-  ClientWidth = 732
+  ClientHeight = 0
+  ClientWidth = 0
   Menu = MainMenu1
   LCLVersion = '2.0.10.0'
   object Image1: TImage
@@ -7443,6 +7443,7 @@ object Form_engin: TForm_engin
           end
           object M_theme_1_2: TMenuItem
             Caption = 'Темная'
+            OnClick = M_theme_1_2Click
           end
           object M_theme_1_3: TMenuItem
             Caption = 'Детская'

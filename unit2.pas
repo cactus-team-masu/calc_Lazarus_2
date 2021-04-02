@@ -184,11 +184,12 @@ end;
 
 procedure TForm_engin.M_baseClick(Sender: TObject);
 begin
+  Form_base.Image1.Picture:=Form_engin.Image1.Picture;
   Form_base.Show;
   Form_engin.Hide;
   Form_about.Hide;
   Form_help.Hide;
-  Form_base.Image1.Picture:=Form_engin.Image1.Picture;
+
 end;
 
 procedure TForm_engin.M_engClick(Sender: TObject);
@@ -218,7 +219,7 @@ end;
 
 procedure TForm_engin.M_theme_1_3Click(Sender: TObject);
 begin
-   Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\children.jpg');
+  Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\children.jpg');
 end;
 
 
