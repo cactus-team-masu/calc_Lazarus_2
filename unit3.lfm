@@ -1,0 +1,32 @@
+object Form_help: TForm_help
+  Left = 592
+  Height = 400
+  Top = 415
+  Width = 1000
+  Caption = 'Справка'
+  ClientHeight = 400
+  ClientWidth = 1000
+  Constraints.MaxHeight = 400
+  Constraints.MaxWidth = 1000
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 1000
+  DesignTimePPI = 120
+  Position = poMainFormCenter
+  LCLVersion = '2.0.8.0'
+  object Label1: TLabel
+    Left = 0
+    Height = 392
+    Top = 0
+    Width = 1000
+    Align = alTop
+    Caption = 'Данная программа представляет собой аналог электронного калькулятора.'#13#10'Предназначена для выполнения простейших арифметических операций. '#13#10'Также предусмотрена возможность выполнения более сложных операций для инженерных вычислений.'#13#10#13#10'Действующие пункты меню программы:'#13#10'Калькулятор: Копировать, Вставить'#13#10'Вид: Режим, Язык, Тема'#13#10'Справка: Справка, О программе'#13#10#13#10'Калькулятор имеет два режима: базовый, расширенный.'#13#10#13#10'Интерфейс приложения доступен на 2-х языках: русском и английском.'#13#10#13#10'Программа имеет 3 темы оформления.'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end
