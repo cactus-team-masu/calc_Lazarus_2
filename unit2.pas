@@ -687,6 +687,7 @@ begin
   if curr_sist=3 then b:=tri_to_dec(a);
   Edit1.Text:=inttostr(b);
   curr_sist:=10;
+  Label3.Caption := 'Текущая система счисления: десятичная';
 end;
 
 procedure TForm_engin.Button_sinClick(Sender: TObject);
