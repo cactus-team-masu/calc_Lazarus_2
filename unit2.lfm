@@ -1,7 +1,7 @@
 object Form_engin: TForm_engin
-  Left = 585
+  Left = 1077
   Height = 438
-  Top = 93
+  Top = 279
   Width = 732
   Caption = 'Расширенный режим'
   ClientHeight = 418
@@ -7238,27 +7238,27 @@ object Form_engin: TForm_engin
     ParentFont = False
   end
   object Button_ce: TSpeedButton
-    Left = 192
+    Left = 120
     Height = 34
-    Top = 136
+    Top = 160
     Width = 78
     Caption = 'ce'
     OnClick = Button_ceClick
     ParentFont = False
   end
   object Button_c: TSpeedButton
-    Left = 272
+    Left = 200
     Height = 34
-    Top = 136
+    Top = 160
     Width = 78
     Caption = 'c'
     OnClick = Button_cClick
     ParentFont = False
   end
   object Button_del: TSpeedButton
-    Left = 352
+    Left = 288
     Height = 34
-    Top = 136
+    Top = 160
     Width = 78
     Caption = 'del'
     OnClick = Button_delClick
@@ -7372,9 +7372,9 @@ object Form_engin: TForm_engin
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 589
+    Left = 584
     Height = 15
-    Top = 174
+    Top = 176
     Width = 112
     Caption = 'Системы счисления'
     ParentColor = False
@@ -7386,6 +7386,7 @@ object Form_engin: TForm_engin
     Top = 240
     Width = 78
     Caption = 'Троичная'
+    OnClick = Button_s3Click
     ParentFont = False
   end
   object Button_s10: TSpeedButton
@@ -7394,11 +7395,20 @@ object Form_engin: TForm_engin
     Top = 280
     Width = 78
     Caption = 'Десятичная'
+    OnClick = Button_s10Click
     ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 336
+    Height = 15
+    Top = 88
+    Width = 225
+    Caption = 'Текущая система счисления: десятичная'
+    ParentColor = False
   end
   object MainMenu1: TMainMenu
     Left = 680
-    Top = 72
+    Top = 96
     object M_1_calc: TMenuItem
       Caption = 'Калькулятор'
       object M_1_copy: TMenuItem

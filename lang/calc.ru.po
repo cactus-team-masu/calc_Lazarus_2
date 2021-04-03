@@ -412,6 +412,10 @@ msgstr ""
 msgid "Системы счисления"
 msgstr ""
 
+#: tform_engin.label3.caption
+msgid "Текущая система счисления: десятичная"
+msgstr ""
+
 #: tform_engin.menu_themes.caption
 msgctxt "tform_engin.menu_themes.caption"
 msgid "Тема"

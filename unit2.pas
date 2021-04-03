@@ -49,6 +49,7 @@ type
     Image1: TImage;
     Label1: TLabel;
     Label2: TLabel;
+    Label3: TLabel;
     MainMenu1: TMainMenu;
     M_theme_2_1: TMenuItem;
     M_theme_2_2: TMenuItem;
@@ -88,7 +89,9 @@ type
     procedure Button_ln_10Click(Sender: TObject);
     procedure Button_ln_eClick(Sender: TObject);
     procedure Button_percentClick(Sender: TObject);
+    procedure Button_s10Click(Sender: TObject);
     procedure Button_s2Click(Sender: TObject);
+    procedure Button_s3Click(Sender: TObject);
     procedure Button_sinClick(Sender: TObject);
     procedure Button_sqrtClick(Sender: TObject);
     procedure Button_squaringClick(Sender: TObject);
@@ -122,6 +125,7 @@ var
   Form_engin: TForm_engin;
   x,y,z,a:real;
   sign:string;
+  curr_sist:integer;
 
 
 implementation
@@ -584,9 +588,105 @@ begin
   x:=strtofloat(Edit1.Text);
 end;
 
-procedure TForm_engin.Button_s2Click(Sender: TObject);
+function Step(a,b:longint):longint;
+var i,st:longint;
 begin
+  if a=0 then Step:=1
+         else begin
+              st:=1;
+              for i:=1 to a do begin
+                               st:=st*b;
+                               Step:=st;
+                               end;
+              end;
+end;
+function dec_to_bin(dec: Integer): Integer;
+var
+  bin, rank, modulo: Integer;
+begin
+  bin := 0;
+  rank := 1;
+  while dec > 0 do
+  begin
+    modulo := dec mod 2;
+    dec := dec div 2;
+    bin := bin + modulo * rank;
+    rank := rank * 10;
+  end;
+  result := bin;
+end;
+function dec_to_tri(dec: Integer): Integer;
+var
+  bin, rank, modulo: Integer;
+begin
+  bin := 0;
+  rank := 1;
+  while dec > 0 do
+  begin
+    modulo := dec mod 3;
+    dec := dec div 3;
+    bin := bin + modulo * rank;
+    rank := rank * 10;
+  end;
+  result := bin;
+end;
+function bin_to_dec(bin: Integer): Integer;
+var dec, two, rank: Integer;
+begin
+  two := 1;
+  dec := 0;
+  while bin > 0 do
+  begin
+    rank := bin mod 10;
+    bin := bin div 10;
+    dec := dec + rank * two;
+    two := two * 2;
+  end;
+  result := dec;
+end;
+function tri_to_dec(bin: Integer): Integer;
+var dec, two, rank: Integer;
+begin
+  two := 1;
+  dec := 0;
+  while bin > 0 do
+  begin
+    rank := bin mod 10;
+    bin := bin div 10;
+    dec := dec + rank * two;
+    two := two * 3;
+  end;
+  result := dec;
+end;
 
+procedure TForm_engin.Button_s2Click(Sender: TObject);
+var a,b:integer;
+begin
+  curr_sist:=2;
+  Label3.Caption := 'Текущая система счисления: двоичная. Операции недоступны';
+  a:=strtoint(Edit1.Text);
+  b:=dec_to_bin(a);
+  Edit1.Text:=inttostr(b);
+end;
+
+procedure TForm_engin.Button_s3Click(Sender: TObject);
+var a,b:integer;
+begin
+  curr_sist:=3;
+  Label3.Caption := 'Текущая система счисления: троичная. Операции недоступны';
+  a:=strtoint(Edit1.Text);
+  b:=dec_to_tri(a);
+  Edit1.Text:=inttostr(b);
+end;
+
+procedure TForm_engin.Button_s10Click(Sender: TObject);
+var a,b:integer;
+begin
+  a:=strtoint(Edit1.Text);
+  if curr_sist=2 then b:=bin_to_dec(a);
+  if curr_sist=3 then b:=tri_to_dec(a);
+  Edit1.Text:=inttostr(b);
+  curr_sist:=10;
 end;
 
 procedure TForm_engin.Button_sinClick(Sender: TObject);

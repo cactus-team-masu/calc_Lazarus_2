@@ -1,19 +1,19 @@
 object Form_base: TForm_base
-  Left = 376
-  Height = 393
-  Top = 199
-  Width = 348
+  Left = 947
+  Height = 400
+  Top = 339
+  Width = 361
   Caption = 'Калькулятор'
-  ClientHeight = 373
-  ClientWidth = 348
+  ClientHeight = 380
+  ClientWidth = 361
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.0.10.0'
   object Image1: TImage
     Left = -4
-    Height = 387
+    Height = 411
     Top = 0
-    Width = 352
+    Width = 372
     OnClick = Image1Click
     Picture.Data = {
       0A544A706567496D616765546F0300FFD8FFE000104A46494600010100000100
