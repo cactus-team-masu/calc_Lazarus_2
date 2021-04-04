@@ -424,8 +424,9 @@ begin
                               '+': z:=x+y;
                               '-': z:=x-y;
                               '*': z:=x*y;
-                              '/': if y<>0 then z:=x/y else Label1.Caption := 'No';
+                              '/': if y<>0 then z:=x/y else Label1.Visible:= true;
                             end;
+
                             Edit1.Text:=FloatToStr(z);
                         end;
 end;
@@ -442,13 +443,15 @@ procedure TForm_base.Button_cClick(Sender: TObject);
 begin
   Edit1.Clear;
   x:=0;y:=0;z:=0;
-  Label1.Caption := '';
+  Label1.Visible:= false;
+  //Label1.Caption := '';
 end;
 
 procedure TForm_base.Button_ceClick(Sender: TObject);
 begin
   Edit1.Clear;
-  Label1.Caption := '';
+  Label1.Visible:= false;
+  //Label1.Caption := '';
 end;
 
 procedure TForm_base.Button_changing_signClick(Sender: TObject);
@@ -466,7 +469,8 @@ begin
     l:=length(s);
     delete(s,l,1);
     Edit1.Text:=s;
-    Label1.Caption := '';
+    Label1.Visible:= false;
+    //Label1.Caption := '';
 end;
 
 
