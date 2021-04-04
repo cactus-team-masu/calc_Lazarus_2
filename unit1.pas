@@ -264,16 +264,19 @@ end;
 procedure TForm_base.Menu_theme_1_1Click(Sender: TObject); //светлая тема фона осн.окна
 begin
   Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\light.jpg');
+  Label1.Font.Color := clBlack;
 end;
 
 procedure TForm_base.Menu_theme_1_2Click(Sender: TObject); //темная тема фона осн.окна
 begin
   Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\dark.jpg');
+  Label1.Font.Color := clWhite;
 end;
 
 procedure TForm_base.Menu_theme_1_3Click(Sender: TObject);
 begin
   Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\children.jpg');
+  Label1.Font.Color := clBlack;
 end;
 
 procedure TForm_base.Menu_theme_2_1Click(Sender: TObject);  //обычная тема для кнопок

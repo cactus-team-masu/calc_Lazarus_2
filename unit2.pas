@@ -309,17 +309,28 @@ end;
 procedure TForm_engin.M_theme_1_1Click(Sender: TObject); //светлая тема
 begin
   Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\light.jpg');
+  Label1.Font.Color := clBlack;
+  Label2.Font.Color := clBlack;
+  Label3.Font.Color := clBlack;
+  Label4.Font.Color := clBlack;
 end;
 
 procedure TForm_engin.M_theme_1_2Click(Sender: TObject); //темная тема
 begin
   Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\dark.jpg');
+  Label1.Font.Color:=clWhite;
   Label2.Font.Color:=clWhite;
+  Label3.Font.Color:=clWhite;
+  Label4.Font.Color:=clWhite;
 end;
 
 procedure TForm_engin.M_theme_1_3Click(Sender: TObject); //детская тема
 begin
   Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\children.jpg');
+  Label1.Font.Color := clBlack;
+  Label2.Font.Color := clBlack;
+  Label3.Font.Color := clBlack;
+  Label4.Font.Color := clBlack;
 end;
 
 procedure TForm_engin.M_theme_2_1Click(Sender: TObject);    //обычная тема
