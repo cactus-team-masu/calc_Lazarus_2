@@ -48,6 +48,11 @@ type
     Edit1: TEdit;
     Label1: TLabel;
     Label2: TLabel;
+<<<<<<< Updated upstream
+=======
+    Label3: TLabel;
+    Label4: TLabel;
+>>>>>>> Stashed changes
     MainMenu1: TMainMenu;
     M_theme_2_1: TMenuItem;
     M_theme_2_2: TMenuItem;
@@ -94,6 +99,7 @@ type
     procedure Button_stepenClick(Sender: TObject);
     procedure Button_sumClick(Sender: TObject);
     procedure Button_tgClick(Sender: TObject);
+    procedure Label3Click(Sender: TObject);
     procedure M_1_copyClick(Sender: TObject);
     procedure M_1_pasteClick(Sender: TObject);
     procedure M_3_1_aboutClick(Sender: TObject);
@@ -148,13 +154,19 @@ end;
 
 procedure TForm_engin.Button_tgClick(Sender: TObject);
 begin
+  Label1.Visible := false;
   x:=strtofloat(Edit1.Text);    //принимаем в градусах
   if x <> 90 then begin
                     x:=DegToRad(x); //перевод в радианы
                     z:=Tan(x);
                     Edit1.Text:=floattostr(z);
                   end
-  else Label1.Caption := 'No';
+  else Label1.Visible := true;
+end;
+
+procedure TForm_engin.Label3Click(Sender: TObject);
+begin
+
 end;
 
 procedure TForm_engin.M_1_copyClick(Sender: TObject);
@@ -189,11 +201,25 @@ end;
 procedure TForm_engin.M_engClick(Sender: TObject);
 begin
   SetDefaultLang('en','lang');
+  if curr_sist = 2 then
+     Label4.Caption := Button_s2.Caption;
+  if curr_sist = 3 then
+     Label4.Caption := Button_s3.Caption;
+  if curr_sist = 10 then
+     Label4.Caption := Button_s10.Caption;
+
 end;
 
 procedure TForm_engin.M_rusClick(Sender: TObject);
 begin
   SetDefaultLang('ru','lang');
+  if curr_sist = 2 then
+    Label4.Caption := Button_s2.Caption;
+  if curr_sist = 3 then
+     Label4.Caption := Button_s3.Caption;
+  if curr_sist = 10 then
+     Label4.Caption := Button_s10.Caption;
+
 end;
 
 procedure TForm_engin.M_theme_1Click(Sender: TObject);
@@ -205,14 +231,16 @@ end;
 
 procedure TForm_engin.Button_equallyClick(Sender: TObject);
 begin
+  Label1.Visible:= false;
   if (Edit1.Text<>'') and (y <> null) then begin
+
                             y:= StrToFloat(Edit1.Text);//забрать второе значение
                             Edit1.Clear;
                             case sign of
                               '+': z:=x+y;
                               '-': z:=x-y;
                               '*': z:=x*y;
-                              '/': if y<>0 then z:=x/y else Label1.Caption := 'No';
+                              '/': if y<>0 then z:=x/y else Label1.Visible:= true;
                               'x^y': z:=Power(x,y);
                             end;
                             Edit1.Text:=FloatToStr(z);
@@ -223,13 +251,13 @@ procedure TForm_engin.Button_cClick(Sender: TObject);
 begin
   Edit1.Clear;
   x:=0;y:=0;z:=0;
-  Label1.Caption := '';
+  Label1.Visible:= false;
 end;
 
 procedure TForm_engin.Button_ceClick(Sender: TObject);
 begin
   Edit1.Clear;
-  Label1.Caption := '';
+  Label1.Visible:= false;
 end;
 
 procedure TForm_engin.Button_changing_signClick(Sender: TObject);
@@ -309,7 +337,36 @@ end;
 
 procedure TForm_engin.Button_s2Click(Sender: TObject);
 begin
+<<<<<<< Updated upstream
 
+=======
+  curr_sist:=2;
+  Label4.Caption := Button_s2.Caption;
+  a:=strtoint(Edit1.Text);
+  b:=dec_to_bin(a);
+  Edit1.Text:=inttostr(b);
+end;
+
+procedure TForm_engin.Button_s3Click(Sender: TObject);
+var a,b:integer;
+begin
+  curr_sist:=3;
+  Label4.Caption := Button_s3.Caption;
+  a:=strtoint(Edit1.Text);
+  b:=dec_to_tri(a);
+  Edit1.Text:=inttostr(b);
+end;
+
+procedure TForm_engin.Button_s10Click(Sender: TObject);
+var a,b:integer;
+begin
+  a:=strtoint(Edit1.Text);
+  if curr_sist=2 then b:=bin_to_dec(a);
+  if curr_sist=3 then b:=tri_to_dec(a);
+  Edit1.Text:=inttostr(b);
+  curr_sist:=10;
+  Label4.Caption := Button_s10.Caption;
+>>>>>>> Stashed changes
 end;
 
 procedure TForm_engin.Button_sinClick(Sender: TObject);

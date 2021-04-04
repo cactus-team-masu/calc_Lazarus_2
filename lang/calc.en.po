@@ -20,7 +20,7 @@ msgstr ""
 "Version: 1.0\n"
 "Created by Cactus Team\n"
 "Repository link: \n"
-"https://github.com/cactus-team-masu/calc_lazarus\n"
+"https://github.com/cactus-team-masu/calc_Lazarus_2\n"
 
 #: tform_base.button_0.caption
 msgctxt "tform_base.button_0.caption"
@@ -141,6 +141,11 @@ msgstr ""
 msgctxt "tform_base.caption"
 msgid "Калькулятор"
 msgstr "Calculator"
+
+#: tform_base.label1.caption
+msgctxt "tform_base.label1.caption"
+msgid "Ошибка!"
+msgstr "Error!"
 
 #: tform_base.menu_1_1_copy.caption
 msgctxt "tform_base.menu_1_1_copy.caption"
@@ -372,6 +377,7 @@ msgid "%"
 msgstr ""
 
 #: tform_engin.button_s10.caption
+msgctxt "tform_engin.button_s10.caption"
 msgid "Десятичная"
 msgstr "Decimal"
 
@@ -414,10 +420,28 @@ msgstr ""
 msgid "Расширенный режим"
 msgstr "Engineering mode"
 
+#: tform_engin.label1.caption
+#, fuzzy
+msgctxt "tform_engin.label1.caption"
+msgid "Ошибка!"
+msgstr "Error!"
+
 #: tform_engin.label2.caption
 msgid "Системы счисления"
 msgstr "Numeral system"
 
+<<<<<<< Updated upstream
+=======
+#: tform_engin.label3.caption
+msgid "Текущая система счисления:"
+msgstr "Current number system:"
+
+#: tform_engin.label4.caption
+msgctxt "tform_engin.label4.caption"
+msgid "Десятичная"
+msgstr "Decimal"
+
+>>>>>>> Stashed changes
 #: tform_engin.menu_themes.caption
 msgctxt "tform_engin.menu_themes.caption"
 msgid "Тема"

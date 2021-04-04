@@ -136,6 +136,11 @@ msgctxt "tform_base.caption"
 msgid "Калькулятор"
 msgstr ""
 
+#: tform_base.label1.caption
+msgctxt "tform_base.label1.caption"
+msgid "Ошибка!"
+msgstr ""
+
 #: tform_base.menu_1_1_copy.caption
 msgctxt "tform_base.menu_1_1_copy.caption"
 msgid "Копировать"
@@ -366,6 +371,7 @@ msgid "%"
 msgstr ""
 
 #: tform_engin.button_s10.caption
+msgctxt "tform_engin.button_s10.caption"
 msgid "Десятичная"
 msgstr ""
 
@@ -408,10 +414,27 @@ msgstr ""
 msgid "Расширенный режим"
 msgstr ""
 
+#: tform_engin.label1.caption
+msgctxt "tform_engin.label1.caption"
+msgid "Ошибка!"
+msgstr ""
+
 #: tform_engin.label2.caption
 msgid "Системы счисления"
 msgstr ""
 
+<<<<<<< Updated upstream
+=======
+#: tform_engin.label3.caption
+msgid "Текущая система счисления:"
+msgstr ""
+
+#: tform_engin.label4.caption
+msgctxt "tform_engin.label4.caption"
+msgid "Десятичная"
+msgstr ""
+
+>>>>>>> Stashed changes
 #: tform_engin.menu_themes.caption
 msgctxt "tform_engin.menu_themes.caption"
 msgid "Тема"
