@@ -13,7 +13,7 @@ msgid ""
 "Версия: 1.0\n"
 "Создано Cactus Team\n"
 "Ссылка на репозиторий: \n"
-"https://github.com/cactus-team-masu/calc_lazarus\n"
+"https://github.com/cactus-team-masu/calc_Lazarus_2\n"
 msgstr ""
 
 #: tform_base.button_0.caption
