@@ -1,19 +1,18 @@
 object Form_engin: TForm_engin
   Left = 930
-  Height = 545
+  Height = 436
   Top = 286
-  Width = 915
+  Width = 732
   Caption = 'Расширенный режим'
-  ClientHeight = 520
-  ClientWidth = 915
-  DesignTimePPI = 120
+  ClientHeight = 416
+  ClientWidth = 732
   Menu = MainMenu1
-  LCLVersion = '2.0.8.0'
+  LCLVersion = '2.0.10.0'
   object Image1: TImage
     Left = 0
-    Height = 521
+    Height = 417
     Top = 0
-    Width = 922
+    Width = 738
     Picture.Data = {
       0A544A706567496D616765546F0300FFD8FFE000104A46494600010100000100
       010000FFE11A054578696600004D4D002A000000080007011200030000000100
@@ -7054,13 +7053,13 @@ object Form_engin: TForm_engin
     }
   end
   object Edit1: TEdit
-    Left = 40
-    Height = 68
-    Top = 30
-    Width = 850
+    Left = 32
+    Height = 55
+    Top = 24
+    Width = 680
     Font.CharSet = RUSSIAN_CHARSET
     Font.Color = clBlack
-    Font.Height = -44
+    Font.Height = -35
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -7068,344 +7067,344 @@ object Form_engin: TForm_engin
     TabOrder = 0
   end
   object Button_squaring: TSpeedButton
-    Left = 150
-    Height = 42
-    Top = 250
-    Width = 98
+    Left = 120
+    Height = 34
+    Top = 200
+    Width = 78
     Caption = '^2'
     OnClick = Button_squaringClick
     ParentFont = False
   end
   object Button_1: TSpeedButton
-    Left = 50
-    Height = 42
-    Top = 300
-    Width = 98
+    Left = 40
+    Height = 34
+    Top = 240
+    Width = 78
     Caption = '1'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_sqrt: TSpeedButton
-    Left = 250
-    Height = 42
-    Top = 250
-    Width = 98
+    Left = 200
+    Height = 34
+    Top = 200
+    Width = 78
     Caption = 'sqrt'
     OnClick = Button_sqrtClick
     ParentFont = False
   end
   object Button_2: TSpeedButton
-    Left = 150
-    Height = 42
-    Top = 300
-    Width = 98
+    Left = 120
+    Height = 34
+    Top = 240
+    Width = 78
     Caption = '2'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_3: TSpeedButton
-    Left = 250
-    Height = 42
-    Top = 300
-    Width = 98
+    Left = 200
+    Height = 34
+    Top = 240
+    Width = 78
     Caption = '3'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_4: TSpeedButton
-    Left = 50
-    Height = 42
-    Top = 350
-    Width = 98
+    Left = 40
+    Height = 34
+    Top = 280
+    Width = 78
     Caption = '4'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_5: TSpeedButton
-    Left = 150
-    Height = 42
-    Top = 350
-    Width = 98
+    Left = 120
+    Height = 34
+    Top = 280
+    Width = 78
     Caption = '5'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_6: TSpeedButton
-    Left = 250
-    Height = 42
-    Top = 350
-    Width = 98
+    Left = 200
+    Height = 34
+    Top = 280
+    Width = 78
     Caption = '6'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_7: TSpeedButton
-    Left = 50
-    Height = 42
-    Top = 400
-    Width = 98
+    Left = 40
+    Height = 34
+    Top = 320
+    Width = 78
     Caption = '7'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_8: TSpeedButton
-    Left = 150
-    Height = 42
-    Top = 400
-    Width = 98
+    Left = 120
+    Height = 34
+    Top = 320
+    Width = 78
     Caption = '8'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_9: TSpeedButton
-    Left = 250
-    Height = 42
-    Top = 400
-    Width = 98
+    Left = 200
+    Height = 34
+    Top = 320
+    Width = 78
     Caption = '9'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_0: TSpeedButton
-    Left = 150
-    Height = 42
-    Top = 450
-    Width = 98
+    Left = 120
+    Height = 34
+    Top = 360
+    Width = 78
     Caption = '0'
     OnClick = ButtonClick
     ParentFont = False
   end
   object Button_changing_sign: TSpeedButton
-    Left = 50
-    Height = 42
-    Top = 450
-    Width = 98
+    Left = 40
+    Height = 34
+    Top = 360
+    Width = 78
     Caption = '+/-'
     OnClick = Button_changing_signClick
     ParentFont = False
   end
   object Button_dot: TSpeedButton
-    Left = 250
-    Height = 42
-    Top = 450
-    Width = 98
+    Left = 200
+    Height = 34
+    Top = 360
+    Width = 78
     Caption = '.'
     OnClick = Button_dotClick
     ParentFont = False
   end
   object Button_division: TSpeedButton
-    Left = 360
-    Height = 42
-    Top = 250
-    Width = 98
+    Left = 288
+    Height = 34
+    Top = 200
+    Width = 78
     Caption = '/'
     OnClick = Button_sumClick
     ParentFont = False
   end
   object Button_multipl: TSpeedButton
-    Left = 360
-    Height = 42
-    Top = 300
-    Width = 98
+    Left = 288
+    Height = 34
+    Top = 240
+    Width = 78
     Caption = '*'
     OnClick = Button_sumClick
     ParentFont = False
   end
   object Button_diff: TSpeedButton
-    Left = 360
-    Height = 42
-    Top = 350
-    Width = 98
+    Left = 288
+    Height = 34
+    Top = 280
+    Width = 78
     Caption = '-'
     OnClick = Button_sumClick
     ParentFont = False
   end
   object Button_sum: TSpeedButton
-    Left = 360
-    Height = 42
-    Top = 400
-    Width = 98
+    Left = 288
+    Height = 34
+    Top = 320
+    Width = 78
     Caption = '+'
     OnClick = Button_sumClick
     ParentFont = False
   end
   object Button_equally: TSpeedButton
-    Left = 360
-    Height = 42
-    Top = 450
-    Width = 98
+    Left = 288
+    Height = 34
+    Top = 360
+    Width = 78
     Caption = '='
     OnClick = Button_equallyClick
     ParentFont = False
   end
   object Button_ce: TSpeedButton
-    Left = 150
-    Height = 42
-    Top = 200
-    Width = 98
+    Left = 120
+    Height = 34
+    Top = 160
+    Width = 78
     Caption = 'ce'
     OnClick = Button_ceClick
     ParentFont = False
   end
   object Button_c: TSpeedButton
-    Left = 250
-    Height = 42
-    Top = 200
-    Width = 98
+    Left = 200
+    Height = 34
+    Top = 160
+    Width = 78
     Caption = 'c'
     OnClick = Button_cClick
     ParentFont = False
   end
   object Button_del: TSpeedButton
-    Left = 360
-    Height = 42
-    Top = 200
-    Width = 98
+    Left = 288
+    Height = 34
+    Top = 160
+    Width = 78
     Caption = 'del'
     OnClick = Button_delClick
     ParentFont = False
   end
   object Button_percent: TSpeedButton
-    Left = 50
-    Height = 42
-    Top = 250
-    Width = 98
+    Left = 40
+    Height = 34
+    Top = 200
+    Width = 78
     Caption = '%'
     OnClick = Button_percentClick
     ParentFont = False
   end
   object Button_abs: TSpeedButton
-    Left = 480
-    Height = 42
-    Top = 250
-    Width = 98
+    Left = 384
+    Height = 34
+    Top = 200
+    Width = 78
     Caption = 'abs'
     OnClick = Button_absClick
     ParentFont = False
   end
   object Button_ln_e: TSpeedButton
-    Left = 480
-    Height = 42
-    Top = 300
-    Width = 98
+    Left = 384
+    Height = 34
+    Top = 240
+    Width = 78
     Caption = 'ln_e'
     OnClick = Button_ln_eClick
     ParentFont = False
   end
   object Button_ln_10: TSpeedButton
-    Left = 480
-    Height = 42
-    Top = 350
-    Width = 98
+    Left = 384
+    Height = 34
+    Top = 280
+    Width = 78
     Caption = 'ln_10'
     OnClick = Button_ln_10Click
     ParentFont = False
   end
   object Button_factorial: TSpeedButton
-    Left = 480
-    Height = 42
-    Top = 400
-    Width = 98
+    Left = 384
+    Height = 34
+    Top = 320
+    Width = 78
     Caption = 'factorial'
     OnClick = Button_factorialClick
     ParentFont = False
   end
   object Button_stepen: TSpeedButton
-    Left = 480
-    Height = 42
-    Top = 450
-    Width = 98
+    Left = 384
+    Height = 34
+    Top = 360
+    Width = 78
     Caption = 'x^y'
     OnClick = Button_stepenClick
     ParentFont = False
   end
   object Button_cos: TSpeedButton
-    Left = 590
-    Height = 42
-    Top = 250
-    Width = 98
+    Left = 472
+    Height = 34
+    Top = 200
+    Width = 78
     Caption = 'cos'
     OnClick = Button_cosClick
     ParentFont = False
   end
   object Button_sin: TSpeedButton
-    Left = 590
-    Height = 42
-    Top = 300
-    Width = 98
+    Left = 472
+    Height = 34
+    Top = 240
+    Width = 78
     Caption = 'sin'
     OnClick = Button_sinClick
     ParentFont = False
   end
   object Button_tg: TSpeedButton
-    Left = 590
-    Height = 42
-    Top = 350
-    Width = 98
+    Left = 472
+    Height = 34
+    Top = 280
+    Width = 78
     Caption = 'tg'
     OnClick = Button_tgClick
     ParentFont = False
   end
   object Button_ctg: TSpeedButton
-    Left = 590
-    Height = 42
-    Top = 400
-    Width = 98
+    Left = 472
+    Height = 34
+    Top = 320
+    Width = 78
     Caption = 'ctg'
     OnClick = Button_ctgClick
     ParentFont = False
   end
   object Label1: TLabel
-    Left = 40
-    Height = 20
-    Top = 104
-    Width = 60
+    Left = 32
+    Height = 15
+    Top = 83
+    Width = 49
     Caption = 'Ошибка!'
     ParentColor = False
     ParentFont = False
     Visible = False
   end
   object Button_s2: TSpeedButton
-    Left = 750
-    Height = 42
-    Top = 250
-    Width = 98
+    Left = 600
+    Height = 34
+    Top = 200
+    Width = 78
     Caption = 'Двоичная'
     OnClick = Button_s2Click
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 730
-    Height = 20
-    Top = 220
-    Width = 138
+    Left = 584
+    Height = 15
+    Top = 176
+    Width = 112
     Caption = 'Системы счисления'
     ParentColor = False
     ParentFont = False
   end
   object Button_s3: TSpeedButton
-    Left = 750
-    Height = 42
-    Top = 300
-    Width = 98
+    Left = 600
+    Height = 34
+    Top = 240
+    Width = 78
     Caption = 'Троичная'
     OnClick = Button_s3Click
     ParentFont = False
   end
   object Button_s10: TSpeedButton
-    Left = 750
-    Height = 42
-    Top = 350
-    Width = 98
+    Left = 600
+    Height = 34
+    Top = 280
+    Width = 78
     Caption = 'Десятичная'
     OnClick = Button_s10Click
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 420
-    Height = 20
-    Top = 110
-    Width = 198
+    Left = 336
+    Height = 15
+    Top = 88
+    Width = 160
     Alignment = taRightJustify
     Caption = 'Текущая система счисления:'
     ParentBidiMode = False
@@ -7414,16 +7413,17 @@ object Form_engin: TForm_engin
     OnClick = Label3Click
   end
   object Label4: TLabel
-    Left = 624
-    Height = 20
-    Top = 110
-    Width = 81
+    Left = 499
+    Height = 15
+    Top = 88
+    Width = 64
     Caption = 'Десятичная'
     ParentColor = False
+    ParentFont = False
   end
   object MainMenu1: TMainMenu
-    left = 850
-    top = 120
+    Left = 680
+    Top = 96
     object M_1_calc: TMenuItem
       Caption = 'Калькулятор'
       object M_1_copy: TMenuItem
