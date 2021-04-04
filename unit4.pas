@@ -13,6 +13,7 @@ type
 
   TForm_about = class(TForm)
     Label1: TLabel;
+    procedure Label1Click(Sender: TObject);
   private
 
   public
@@ -25,6 +26,13 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm_about }
+
+procedure TForm_about.Label1Click(Sender: TObject);
+begin
+
+end;
 
 end.
 

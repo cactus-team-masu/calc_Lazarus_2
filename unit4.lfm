@@ -20,7 +20,7 @@ object Form_about: TForm_about
     Width = 515
     Align = alTop
     Alignment = taCenter
-    Caption = 'Калькулятор'#13#10#13#10'Версия: 1.0'#13#10'Создано Cactus Team'#13#10'Ссылка на репозиторий: '#13#10'https://github.com/cactus-team-masu/calc_lazarus'
+    Caption = 'Калькулятор'#13#10#13#10'Версия: 1.0'#13#10'Создано Cactus Team'#13#10'Ссылка на репозиторий: '#13'https://github.com/cactus-team-masu/calc_Lazarus_2'
     Font.CharSet = RUSSIAN_CHARSET
     Font.Color = clBlack
     Font.Height = -20
@@ -29,5 +29,6 @@ object Form_about: TForm_about
     Font.Quality = fqDraft
     ParentColor = False
     ParentFont = False
+    OnClick = Label1Click
   end
 end

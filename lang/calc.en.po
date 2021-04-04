@@ -13,7 +13,7 @@ msgid ""
 "Версия: 1.0\n"
 "Создано Cactus Team\n"
 "Ссылка на репозиторий: \n"
-"https://github.com/cactus-team-masu/calc_lazarus\n"
+"https://github.com/cactus-team-masu/calc_Lazarus_2\n"
 msgstr ""
 "Calculator\n"
 "\n"
@@ -421,8 +421,6 @@ msgid "Расширенный режим"
 msgstr "Engineering mode"
 
 #: tform_engin.label1.caption
-#, fuzzy
-msgctxt "tform_engin.label1.caption"
 msgid "Ошибка!"
 msgstr "Error!"
 
@@ -430,8 +428,6 @@ msgstr "Error!"
 msgid "Системы счисления"
 msgstr "Numeral system"
 
-<<<<<<< Updated upstream
-=======
 #: tform_engin.label3.caption
 msgid "Текущая система счисления:"
 msgstr "Current number system:"
@@ -441,7 +437,6 @@ msgctxt "tform_engin.label4.caption"
 msgid "Десятичная"
 msgstr "Decimal"
 
->>>>>>> Stashed changes
 #: tform_engin.menu_themes.caption
 msgctxt "tform_engin.menu_themes.caption"
 msgid "Тема"
