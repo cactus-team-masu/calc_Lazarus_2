@@ -286,7 +286,10 @@ end;
 procedure TForm_engin.M_theme_1_2Click(Sender: TObject); //темная тема
 begin
   Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\dark.jpg');
+  Label1.Font.Color:=clWhite;
   Label2.Font.Color:=clWhite;
+  Label3.Font.Color:=clWhite;
+  Label4.Font.Color:=clWhite;
 end;
 
 procedure TForm_engin.M_theme_1_3Click(Sender: TObject); //детская тема

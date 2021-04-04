@@ -1,6 +1,27 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: tform_about.caption
+msgctxt "tform_about.caption"
+msgid "О программе"
+msgstr "About"
+
+#: tform_about.label1.caption
+msgid ""
+"Калькулятор\n"
+"\n"
+"Версия: 1.0\n"
+"Создано Cactus Team\n"
+"Ссылка на репозиторий: \n"
+"https://github.com/cactus-team-masu/calc_Lazarus_2\n"
+msgstr ""
+"Calculator\n"
+"\n"
+"Version: 1.0\n"
+"Created by Cactus Team\n"
+"Repository link: \n"
+"https://github.com/cactus-team-masu/calc_Lazarus_2\n"
+
 #: tform_base.button_0.caption
 msgctxt "tform_base.button_0.caption"
 msgid "0"
@@ -119,57 +140,62 @@ msgstr ""
 #: tform_base.caption
 msgctxt "tform_base.caption"
 msgid "Калькулятор"
-msgstr ""
+msgstr "Calculator"
+
+#: tform_base.label1.caption
+msgctxt "tform_base.label1.caption"
+msgid "Ошибка!"
+msgstr "Error!"
 
 #: tform_base.menu_1_1_copy.caption
 msgctxt "tform_base.menu_1_1_copy.caption"
 msgid "Копировать"
-msgstr ""
+msgstr "Copy"
 
 #: tform_base.menu_1_2_paste.caption
 msgctxt "tform_base.menu_1_2_paste.caption"
 msgid "Вставить"
-msgstr ""
+msgstr "Paste"
 
 #: tform_base.menu_1_calc.caption
 msgctxt "tform_base.menu_1_calc.caption"
 msgid "Калькулятор"
-msgstr ""
+msgstr "Calculator"
 
 #: tform_base.menu_2_1_base.caption
 msgctxt "tform_base.menu_2_1_base.caption"
 msgid "Режим"
-msgstr ""
+msgstr "Mode"
 
 #: tform_base.menu_2_2_lang.caption
 msgctxt "tform_base.menu_2_2_lang.caption"
 msgid "Язык"
-msgstr ""
+msgstr "Language"
 
 #: tform_base.menu_2_mode.caption
 msgctxt "tform_base.menu_2_mode.caption"
 msgid "Вид"
-msgstr ""
+msgstr "View"
 
 #: tform_base.menu_3_1_help.caption
 msgctxt "tform_base.menu_3_1_help.caption"
 msgid "Справка"
-msgstr ""
+msgstr "Help"
 
 #: tform_base.menu_3_2_about.caption
 msgctxt "tform_base.menu_3_2_about.caption"
 msgid "О программе"
-msgstr ""
+msgstr "About"
 
 #: tform_base.menu_3_help.caption
 msgctxt "tform_base.menu_3_help.caption"
 msgid "Справка"
-msgstr ""
+msgstr "Help"
 
 #: tform_base.menu_base.caption
 msgctxt "tform_base.menu_base.caption"
 msgid "Обычный"
-msgstr ""
+msgstr "Basic"
 
 #: tform_base.menu_eng.caption
 msgctxt "tform_base.menu_eng.caption"
@@ -179,7 +205,7 @@ msgstr ""
 #: tform_base.menu_engin.caption
 msgctxt "tform_base.menu_engin.caption"
 msgid "Расширенный"
-msgstr ""
+msgstr "Engineering"
 
 #: tform_base.menu_rus.caption
 msgctxt "tform_base.menu_rus.caption"
@@ -189,42 +215,42 @@ msgstr ""
 #: tform_base.menu_themes.caption
 msgctxt "tform_base.menu_themes.caption"
 msgid "Тема"
-msgstr ""
+msgstr "Theme"
 
 #: tform_base.menu_theme_1.caption
 msgctxt "tform_base.menu_theme_1.caption"
 msgid "Для фона"
-msgstr ""
+msgstr "Background"
 
 #: tform_base.menu_theme_1_1.caption
 msgctxt "tform_base.menu_theme_1_1.caption"
 msgid "Светлая"
-msgstr ""
+msgstr "Light"
 
 #: tform_base.menu_theme_1_2.caption
 msgctxt "tform_base.menu_theme_1_2.caption"
 msgid "Темная"
-msgstr ""
+msgstr "Dark"
 
 #: tform_base.menu_theme_1_3.caption
 msgctxt "tform_base.menu_theme_1_3.caption"
 msgid "Детская"
-msgstr ""
+msgstr "For children"
 
 #: tform_base.menu_theme_2.caption
 msgctxt "tform_base.menu_theme_2.caption"
 msgid "Для кнопок"
-msgstr ""
+msgstr "Buttons"
 
 #: tform_base.menu_theme_2_1.caption
 msgctxt "tform_base.menu_theme_2_1.caption"
 msgid "Светлая"
-msgstr ""
+msgstr "Light"
 
 #: tform_base.menu_theme_2_2.caption
 msgctxt "tform_base.menu_theme_2_2.caption"
 msgid "Темная"
-msgstr ""
+msgstr "Dark"
 
 #: tform_engin.button_0.caption
 msgctxt "tform_engin.button_0.caption"
@@ -351,16 +377,17 @@ msgid "%"
 msgstr ""
 
 #: tform_engin.button_s10.caption
+msgctxt "tform_engin.button_s10.caption"
 msgid "Десятичная"
-msgstr ""
+msgstr "Decimal"
 
 #: tform_engin.button_s2.caption
 msgid "Двоичная"
-msgstr ""
+msgstr "Binary"
 
 #: tform_engin.button_s3.caption
 msgid "Троичная"
-msgstr ""
+msgstr "Ternary"
 
 #: tform_engin.button_sin.caption
 msgid "sin"
@@ -391,83 +418,80 @@ msgstr ""
 
 #: tform_engin.caption
 msgid "Расширенный режим"
-msgstr ""
+msgstr "Engineering mode"
 
 #: tform_engin.label1.caption
 msgctxt "tform_engin.label1.caption"
 msgid "Ошибка!"
-msgstr ""
+msgstr "Error!"
 
 #: tform_engin.label2.caption
 msgid "Системы счисления"
-msgstr ""
+msgstr "Numeral system"
 
-<<<<<<< Updated upstream
-=======
 #: tform_engin.label3.caption
 msgid "Текущая система счисления:"
-msgstr ""
+msgstr "Current number system:"
 
 #: tform_engin.label4.caption
 msgctxt "tform_engin.label4.caption"
 msgid "Десятичная"
-msgstr ""
+msgstr "Decimal"
 
->>>>>>> Stashed changes
 #: tform_engin.menu_themes.caption
 msgctxt "tform_engin.menu_themes.caption"
 msgid "Тема"
-msgstr ""
+msgstr "Theme"
 
 #: tform_engin.m_1_calc.caption
 msgctxt "tform_engin.m_1_calc.caption"
 msgid "Калькулятор"
-msgstr ""
+msgstr "Calculator"
 
 #: tform_engin.m_1_copy.caption
 msgctxt "tform_engin.m_1_copy.caption"
 msgid "Копировать"
-msgstr ""
+msgstr "Copy"
 
 #: tform_engin.m_1_paste.caption
 msgctxt "tform_engin.m_1_paste.caption"
 msgid "Вставить"
-msgstr ""
+msgstr "Paste"
 
 #: tform_engin.m_2_lang.caption
 msgctxt "tform_engin.m_2_lang.caption"
 msgid "Язык"
-msgstr ""
+msgstr "Language"
 
 #: tform_engin.m_2_mode.caption
 msgctxt "tform_engin.m_2_mode.caption"
 msgid "Вид"
-msgstr ""
+msgstr "View"
 
 #: tform_engin.m_2_type.caption
 msgctxt "tform_engin.m_2_type.caption"
 msgid "Режим"
-msgstr ""
+msgstr "Mode"
 
 #: tform_engin.m_3_1_about.caption
 msgctxt "tform_engin.m_3_1_about.caption"
 msgid "О программе"
-msgstr ""
+msgstr "About"
 
 #: tform_engin.m_3_1_help.caption
 msgctxt "tform_engin.m_3_1_help.caption"
 msgid "Справка"
-msgstr ""
+msgstr "Help"
 
 #: tform_engin.m_3_help.caption
 msgctxt "tform_engin.m_3_help.caption"
 msgid "Справка"
-msgstr ""
+msgstr "Help"
 
 #: tform_engin.m_base.caption
 msgctxt "tform_engin.m_base.caption"
 msgid "Обычный"
-msgstr ""
+msgstr "Basic"
 
 #: tform_engin.m_eng.caption
 msgctxt "tform_engin.m_eng.caption"
@@ -477,7 +501,7 @@ msgstr ""
 #: tform_engin.m_engin.caption
 msgctxt "tform_engin.m_engin.caption"
 msgid "Расширенный"
-msgstr ""
+msgstr "Engineering"
 
 #: tform_engin.m_rus.caption
 msgctxt "tform_engin.m_rus.caption"
@@ -487,35 +511,72 @@ msgstr ""
 #: tform_engin.m_theme_1.caption
 msgctxt "tform_engin.m_theme_1.caption"
 msgid "Для фона"
-msgstr ""
+msgstr "Background"
 
 #: tform_engin.m_theme_1_1.caption
 msgctxt "tform_engin.m_theme_1_1.caption"
 msgid "Светлая"
-msgstr ""
+msgstr "Light"
 
 #: tform_engin.m_theme_1_2.caption
 msgctxt "tform_engin.m_theme_1_2.caption"
 msgid "Темная"
-msgstr ""
+msgstr "Dark"
 
 #: tform_engin.m_theme_1_3.caption
 msgctxt "tform_engin.m_theme_1_3.caption"
 msgid "Детская"
-msgstr ""
+msgstr "For children"
 
 #: tform_engin.m_theme_2.caption
 msgctxt "tform_engin.m_theme_2.caption"
 msgid "Для кнопок"
-msgstr ""
+msgstr "Buttons"
 
 #: tform_engin.m_theme_2_1.caption
 msgctxt "tform_engin.m_theme_2_1.caption"
 msgid "Светлая"
-msgstr ""
+msgstr "Light"
 
 #: tform_engin.m_theme_2_2.caption
 msgctxt "tform_engin.m_theme_2_2.caption"
 msgid "Темная"
+msgstr "Dark"
+
+#: tform_help.caption
+msgctxt "tform_help.caption"
+msgid "Справка"
+msgstr "Help"
+
+#: tform_help.label1.caption
+msgid ""
+"Данная программа представляет собой аналог электронного калькулятора.\n"
+"Предназначена для выполнения простейших арифметических операций. \n"
+"Также предусмотрена возможность выполнения более сложных операций для инженерных вычислений.\n"
+"\n"
+"Действующие пункты меню программы:\n"
+"Калькулятор: Копировать, Вставить\n"
+"Вид: Режим, Язык, Тема\n"
+"Справка: Справка, О программе\n"
+"\n"
+"Калькулятор имеет два режима: базовый, расширенный.\n"
+"\n"
+"Интерфейс приложения доступен на 2-х языках: русском и английском.\n"
+"\n"
+"Программа имеет 3 темы оформления.\n"
 msgstr ""
+"This program is an analog of an electronic calculator.\n"
+"It is designed to perform the simplest arithmetic operations. \n"
+"It also provides the ability to perform more complex operations for engineering calculations.\n"
+"\n"
+"Current program menu items:\n"
+"Calculator: Copy, Paste\n"
+"View: Mode, Language, Theme\n"
+"Help: Help, About the program\n"
+"\n"
+"The calculator has two modes: basic and programming.\n"
+"\n"
+"The app interface is available in 2 languages: Russian and English.\n"
+"\n"
+"The program has 3 themes.\n"
 

@@ -19,10 +19,18 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
+<<<<<<< Updated upstream
         <EditorIndex Value="-1"/>
         <TopLine Value="141"/>
         <CursorPos X="19" Y="151"/>
         <UsageCount Value="58"/>
+=======
+        <TopLine Value="435"/>
+        <CursorPos X="22" Y="443"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+>>>>>>> Stashed changes
       </Unit1>
       <Unit2>
         <Filename Value="unit2.pas"/>
@@ -31,10 +39,21 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit2"/>
+<<<<<<< Updated upstream
         <EditorIndex Value="-1"/>
         <TopLine Value="214"/>
         <CursorPos X="19" Y="194"/>
         <UsageCount Value="58"/>
+=======
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="288"/>
+        <CursorPos X="9" Y="320"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+>>>>>>> Stashed changes
       </Unit2>
       <Unit3>
         <Filename Value="code.pas"/>
@@ -62,6 +81,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit4"/>
+<<<<<<< Updated upstream
         <EditorIndex Value="-1"/>
         <CursorPos X="50" Y="16"/>
         <UsageCount Value="36"/>
@@ -85,6 +105,11 @@
         <Filename Value="C:\Users\Nastya\Desktop\Unit1.pas"/>
         <IsVisibleTab Value="True"/>
         <UsageCount Value="10"/>
+=======
+        <EditorIndex Value="1"/>
+        <CursorPos X="3" Y="34"/>
+        <UsageCount Value="21"/>
+>>>>>>> Stashed changes
         <Loaded Value="True"/>
       </Unit8>
     </Units>

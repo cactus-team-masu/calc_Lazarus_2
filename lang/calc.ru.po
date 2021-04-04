@@ -1,6 +1,21 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: tform_about.caption
+msgctxt "tform_about.caption"
+msgid "О программе"
+msgstr ""
+
+#: tform_about.label1.caption
+msgid ""
+"Калькулятор\n"
+"\n"
+"Версия: 1.0\n"
+"Создано Cactus Team\n"
+"Ссылка на репозиторий: \n"
+"https://github.com/cactus-team-masu/calc_Lazarus_2\n"
+msgstr ""
+
 #: tform_base.button_0.caption
 msgctxt "tform_base.button_0.caption"
 msgid "0"
@@ -119,6 +134,11 @@ msgstr ""
 #: tform_base.caption
 msgctxt "tform_base.caption"
 msgid "Калькулятор"
+msgstr ""
+
+#: tform_base.label1.caption
+msgctxt "tform_base.label1.caption"
+msgid "Ошибка!"
 msgstr ""
 
 #: tform_base.menu_1_1_copy.caption
@@ -351,6 +371,7 @@ msgid "%"
 msgstr ""
 
 #: tform_engin.button_s10.caption
+msgctxt "tform_engin.button_s10.caption"
 msgid "Десятичная"
 msgstr ""
 
@@ -402,8 +423,6 @@ msgstr ""
 msgid "Системы счисления"
 msgstr ""
 
-<<<<<<< Updated upstream
-=======
 #: tform_engin.label3.caption
 msgid "Текущая система счисления:"
 msgstr ""
@@ -413,7 +432,6 @@ msgctxt "tform_engin.label4.caption"
 msgid "Десятичная"
 msgstr ""
 
->>>>>>> Stashed changes
 #: tform_engin.menu_themes.caption
 msgctxt "tform_engin.menu_themes.caption"
 msgid "Тема"
@@ -517,5 +535,28 @@ msgstr ""
 #: tform_engin.m_theme_2_2.caption
 msgctxt "tform_engin.m_theme_2_2.caption"
 msgid "Темная"
+msgstr ""
+
+#: tform_help.caption
+msgctxt "tform_help.caption"
+msgid "Справка"
+msgstr ""
+
+#: tform_help.label1.caption
+msgid ""
+"Данная программа представляет собой аналог электронного калькулятора.\n"
+"Предназначена для выполнения простейших арифметических операций. \n"
+"Также предусмотрена возможность выполнения более сложных операций для инженерных вычислений.\n"
+"\n"
+"Действующие пункты меню программы:\n"
+"Калькулятор: Копировать, Вставить\n"
+"Вид: Режим, Язык, Тема\n"
+"Справка: Справка, О программе\n"
+"\n"
+"Калькулятор имеет два режима: базовый, расширенный.\n"
+"\n"
+"Интерфейс приложения доступен на 2-х языках: русском и английском.\n"
+"\n"
+"Программа имеет 3 темы оформления.\n"
 msgstr ""
 
