@@ -1,29 +1,14 @@
 object Form_engin: TForm_engin
-<<<<<<< Updated upstream
-  Left = 798
-  Height = 546
-  Top = 184
-  Width = 915
-  Caption = 'Расширенный режим'
-  ClientHeight = 521
-=======
   Left = 930
   Height = 545
   Top = 286
   Width = 915
   Caption = 'Расширенный режим'
   ClientHeight = 520
->>>>>>> Stashed changes
   ClientWidth = 915
   DesignTimePPI = 120
   Menu = MainMenu1
   LCLVersion = '2.0.8.0'
-<<<<<<< Updated upstream
-  object Edit1: TEdit
-    Left = 40
-    Height = 68
-    Top = 10
-=======
   object Image1: TImage
     Left = 0
     Height = 521
@@ -7072,7 +7057,6 @@ object Form_engin: TForm_engin
     Left = 40
     Height = 68
     Top = 30
->>>>>>> Stashed changes
     Width = 850
     Font.CharSet = RUSSIAN_CHARSET
     Font.Color = clBlack
@@ -7255,45 +7239,27 @@ object Form_engin: TForm_engin
     ParentFont = False
   end
   object Button_ce: TSpeedButton
-<<<<<<< Updated upstream
-    Left = 240
-    Height = 42
-    Top = 170
-=======
     Left = 150
     Height = 42
     Top = 200
->>>>>>> Stashed changes
     Width = 98
     Caption = 'ce'
     OnClick = Button_ceClick
     ParentFont = False
   end
   object Button_c: TSpeedButton
-<<<<<<< Updated upstream
-    Left = 340
-    Height = 42
-    Top = 170
-=======
     Left = 250
     Height = 42
     Top = 200
->>>>>>> Stashed changes
     Width = 98
     Caption = 'c'
     OnClick = Button_cClick
     ParentFont = False
   end
   object Button_del: TSpeedButton
-<<<<<<< Updated upstream
-    Left = 440
-    Height = 42
-    Top = 170
-=======
     Left = 360
     Height = 42
     Top = 200
->>>>>>> Stashed changes
     Width = 98
     Caption = 'del'
     OnClick = Button_delClick
@@ -7390,18 +7356,11 @@ object Form_engin: TForm_engin
     ParentFont = False
   end
   object Label1: TLabel
-<<<<<<< Updated upstream
-    Left = 492
-    Height = 1
-    Top = 100
-    Width = 1
-=======
     Left = 40
     Height = 20
     Top = 104
     Width = 60
     Caption = 'Ошибка!'
->>>>>>> Stashed changes
     ParentColor = False
     ParentFont = False
     Visible = False
@@ -7416,15 +7375,9 @@ object Form_engin: TForm_engin
     ParentFont = False
   end
   object Label2: TLabel
-<<<<<<< Updated upstream
-    Left = 736
-    Height = 20
-    Top = 218
-=======
     Left = 730
     Height = 20
     Top = 220
->>>>>>> Stashed changes
     Width = 138
     Caption = 'Системы счисления'
     ParentColor = False
@@ -7436,6 +7389,7 @@ object Form_engin: TForm_engin
     Top = 300
     Width = 98
     Caption = 'Троичная'
+    OnClick = Button_s3Click
     ParentFont = False
   end
   object Button_s10: TSpeedButton
@@ -7444,13 +7398,9 @@ object Form_engin: TForm_engin
     Top = 350
     Width = 98
     Caption = 'Десятичная'
+    OnClick = Button_s10Click
     ParentFont = False
   end
-<<<<<<< Updated upstream
-  object MainMenu1: TMainMenu
-    left = 850
-    top = 90
-=======
   object Label3: TLabel
     Left = 420
     Height = 20
@@ -7474,7 +7424,6 @@ object Form_engin: TForm_engin
   object MainMenu1: TMainMenu
     left = 850
     top = 120
->>>>>>> Stashed changes
     object M_1_calc: TMenuItem
       Caption = 'Калькулятор'
       object M_1_copy: TMenuItem
@@ -7516,21 +7465,26 @@ object Form_engin: TForm_engin
           OnClick = M_theme_1Click
           object M_theme_1_1: TMenuItem
             Caption = 'Светлая'
+            OnClick = M_theme_1_1Click
           end
           object M_theme_1_2: TMenuItem
             Caption = 'Темная'
+            OnClick = M_theme_1_2Click
           end
           object M_theme_1_3: TMenuItem
             Caption = 'Детская'
+            OnClick = M_theme_1_3Click
           end
         end
         object M_theme_2: TMenuItem
           Caption = 'Для кнопок'
           object M_theme_2_1: TMenuItem
             Caption = 'Светлая'
+            OnClick = M_theme_2_1Click
           end
           object M_theme_2_2: TMenuItem
             Caption = 'Темная'
+            OnClick = M_theme_2_2Click
           end
         end
       end

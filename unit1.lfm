@@ -1,13 +1,4 @@
 object Form_base: TForm_base
-<<<<<<< Updated upstream
-  Left = 1074
-  Height = 491
-  Top = 466
-  Width = 431
-  Caption = 'Калькулятор'
-  ClientHeight = 466
-  ClientWidth = 431
-=======
   Left = 1158
   Height = 500
   Top = 341
@@ -15,13 +6,10 @@ object Form_base: TForm_base
   Caption = 'Калькулятор'
   ClientHeight = 475
   ClientWidth = 451
->>>>>>> Stashed changes
   DesignTimePPI = 120
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.0.8.0'
-<<<<<<< Updated upstream
-=======
   object Image1: TImage
     Left = -5
     Height = 514
@@ -7067,7 +7055,6 @@ object Form_base: TForm_base
       9FFFD9
     }
   end
->>>>>>> Stashed changes
   object Edit1: TEdit
     Left = 30
     Height = 68
@@ -7082,15 +7069,6 @@ object Form_base: TForm_base
     ParentFont = False
     TabOrder = 0
   end
-  object Button_percent: TSpeedButton
-    Left = 30
-    Height = 36
-    Top = 210
-    Width = 90
-    Caption = '%'
-    OnClick = Button_percentClick
-    ParentFont = False
-  end
   object Button_squaring: TSpeedButton
     Left = 130
     Height = 36
@@ -7104,11 +7082,7 @@ object Form_base: TForm_base
     Left = 30
     Height = 36
     Top = 260
-<<<<<<< Updated upstream
-    Width = 90
-=======
     Width = 88
->>>>>>> Stashed changes
     Caption = '1'
     OnClick = ButtonClick
     ParentFont = False
@@ -7295,12 +7269,6 @@ object Form_base: TForm_base
   end
   object Label1: TLabel
     Left = 32
-<<<<<<< Updated upstream
-    Height = 1
-    Top = 112
-    Width = 1
-    ParentColor = False
-=======
     Height = 20
     Top = 112
     Width = 60
@@ -7321,7 +7289,6 @@ object Form_base: TForm_base
     Color = clDefault
     OnClick = Button_percentClick
     ParentFont = False
->>>>>>> Stashed changes
   end
   object MainMenu1: TMainMenu
     left = 340
@@ -7366,21 +7333,26 @@ object Form_base: TForm_base
           Caption = 'Для фона'
           object Menu_theme_1_1: TMenuItem
             Caption = 'Светлая'
+            OnClick = Menu_theme_1_1Click
           end
           object Menu_theme_1_2: TMenuItem
             Caption = 'Темная'
+            OnClick = Menu_theme_1_2Click
           end
           object Menu_theme_1_3: TMenuItem
             Caption = 'Детская'
+            OnClick = Menu_theme_1_3Click
           end
         end
         object Menu_theme_2: TMenuItem
           Caption = 'Для кнопок'
           object Menu_theme_2_1: TMenuItem
             Caption = 'Светлая'
+            OnClick = Menu_theme_2_1Click
           end
           object Menu_theme_2_2: TMenuItem
             Caption = 'Темная'
+            OnClick = Menu_theme_2_2Click
           end
         end
       end

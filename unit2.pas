@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus, LCLTranslator,
-  Buttons, Math;
+  Buttons, ExtCtrls, Math;
 
 type
 
@@ -46,13 +46,11 @@ type
     Button_equally: TSpeedButton;
     Button_division: TSpeedButton;
     Edit1: TEdit;
+    Image1: TImage;
     Label1: TLabel;
     Label2: TLabel;
-<<<<<<< Updated upstream
-=======
     Label3: TLabel;
     Label4: TLabel;
->>>>>>> Stashed changes
     MainMenu1: TMainMenu;
     M_theme_2_1: TMenuItem;
     M_theme_2_2: TMenuItem;
@@ -92,7 +90,9 @@ type
     procedure Button_ln_10Click(Sender: TObject);
     procedure Button_ln_eClick(Sender: TObject);
     procedure Button_percentClick(Sender: TObject);
+    procedure Button_s10Click(Sender: TObject);
     procedure Button_s2Click(Sender: TObject);
+    procedure Button_s3Click(Sender: TObject);
     procedure Button_sinClick(Sender: TObject);
     procedure Button_sqrtClick(Sender: TObject);
     procedure Button_squaringClick(Sender: TObject);
@@ -108,6 +108,11 @@ type
     procedure M_engClick(Sender: TObject);
     procedure M_rusClick(Sender: TObject);
     procedure M_theme_1Click(Sender: TObject);
+    procedure M_theme_1_1Click(Sender: TObject);
+    procedure M_theme_1_2Click(Sender: TObject);
+    procedure M_theme_1_3Click(Sender: TObject);
+    procedure M_theme_2_1Click(Sender: TObject);
+    procedure M_theme_2_2Click(Sender: TObject);
 
 
 
@@ -122,6 +127,7 @@ var
   Form_engin: TForm_engin;
   x,y,z,a:real;
   sign:string;
+  curr_sist:integer;
 
 
 implementation
@@ -192,10 +198,81 @@ end;
 
 procedure TForm_engin.M_baseClick(Sender: TObject);
 begin
+  Form_base.Image1.Picture:=Form_engin.Image1.Picture;
   Form_base.Show;
   Form_engin.Hide;
   Form_about.Hide;
   Form_help.Hide;
+  //переход кнопок
+  Form_base.Button_percent.Flat:=Form_engin.Button_percent.Flat;   //Button_percent
+  Form_base.Button_percent.Transparent:= Form_engin.Button_percent.Transparent;
+  Form_base.Button_percent.Color:=Form_engin.Button_percent.Color;
+  Form_base.Button_squaring.Flat:= Form_engin.Button_squaring.Flat; //Button_squaring
+  Form_base.Button_squaring.Transparent:= Form_engin.Button_squaring.Transparent;
+  Form_base.Button_squaring.Color:= Form_engin.Button_squaring.Color;
+  Form_base.Button_0.Flat:= Form_engin.Button_0.Flat;  //Button_0
+  Form_base.Button_0.Transparent:= Form_engin.Button_0.Transparent;
+  Form_base.Button_0.Color:= Form_engin.Button_0.Color;
+  Form_base.Button_1.Flat:= Form_engin.Button_1.Flat;//Button_1
+  Form_base.Button_1.Transparent:= Form_engin.Button_1.Transparent;
+  Form_base.Button_1.Color:= Form_engin.Button_1.Color;
+  Form_base.Button_2.Flat:= Form_engin.Button_2.Flat;//Button_2
+  Form_base.Button_2.Transparent:= Form_engin.Button_2.Transparent;
+  Form_base.Button_2.Color:= Form_engin.Button_2.Color;
+  Form_base.Button_3.Flat:= Form_engin.Button_3.Flat;//Button_3
+  Form_base.Button_3.Transparent:= Form_engin.Button_3.Transparent;
+  Form_base.Button_3.Color:= Form_engin.Button_3.Color;
+  Form_base.Button_4.Flat:= Form_engin.Button_4.Flat;//Button_4
+  Form_base.Button_4.Transparent:= Form_engin.Button_4.Transparent;
+  Form_base.Button_4.Color:= Form_engin.Button_4.Color;
+  Form_base.Button_5.Flat:= Form_engin.Button_5.Flat;//Button_5
+  Form_base.Button_5.Transparent:= Form_engin.Button_5.Transparent;
+  Form_base.Button_5.Color:= Form_engin.Button_5.Color;
+  Form_base.Button_6.Flat:= Form_engin.Button_6.Flat;//Button_6
+  Form_base.Button_6.Transparent:= Form_engin.Button_6.Transparent;
+  Form_base.Button_6.Color:= Form_engin.Button_6.Color;
+  Form_base.Button_7.Flat:= Form_engin.Button_7.Flat;//Button_7
+  Form_base.Button_7.Transparent:= Form_engin.Button_7.Transparent;
+  Form_base.Button_7.Color:= Form_engin.Button_7.Color;
+  Form_base.Button_8.Flat:= Form_engin.Button_8.Flat;//Button_8
+  Form_base.Button_8.Transparent:= Form_engin.Button_8.Transparent;
+  Form_base.Button_8.Color:= Form_engin.Button_8.Color;
+  Form_base.Button_9.Flat:= Form_engin.Button_9.Flat;//Button_9
+  Form_base.Button_9.Transparent:= Form_engin.Button_9.Transparent;
+  Form_base.Button_9.Color:= Form_engin.Button_9.Color;
+  Form_base.Button_sqrt.Flat:= Form_engin.Button_sqrt.Flat;//Button_sqrt
+  Form_base.Button_sqrt.Transparent:= Form_engin.Button_sqrt.Transparent;
+  Form_base.Button_sqrt.Color:= Form_engin.Button_sqrt.Color;
+  Form_base.Button_changing_sign.Flat:= Form_engin.Button_changing_sign.Flat;//Button_changing_sign
+  Form_base.Button_changing_sign.Transparent:= Form_engin.Button_changing_sign.Transparent;
+  Form_base.Button_changing_sign.Color:= Form_engin.Button_changing_sign.Color;
+  Form_base.Button_dot.Flat:= Form_engin.Button_dot.Flat;//Button_dot
+  Form_base.Button_dot.Transparent:= Form_engin.Button_dot.Transparent;
+  Form_base.Button_dot.Color:= Form_engin.Button_dot.Color;
+  Form_base.Button_ce.Flat:= Form_engin.Button_ce.Flat;//Button_ce
+  Form_base.Button_ce.Transparent:= Form_engin.Button_ce.Transparent;
+  Form_base.Button_ce.Color:= Form_engin.Button_ce.Color;
+  Form_base.Button_c.Flat:= Form_engin.Button_c.Flat;//Button_c
+  Form_base.Button_c.Transparent:= Form_engin.Button_c.Transparent;
+  Form_base.Button_c.Color:= Form_engin.Button_c.Color;
+  Form_base.Button_del.Flat:= Form_engin.Button_del.Flat;//Button_del
+  Form_base.Button_del.Transparent:= Form_engin.Button_del.Transparent;
+  Form_base.Button_del.Color:= Form_engin.Button_del.Color;
+  Form_base.Button_division.Flat:= Form_engin.Button_division.Flat;//Button_division
+  Form_base.Button_division.Transparent:= Form_engin.Button_division.Transparent;
+  Form_base.Button_division.Color:= Form_engin.Button_division.Color;
+  Form_base.Button_multipl.Flat:= Form_engin.Button_multipl.Flat;//Button_multipl
+  Form_base.Button_multipl.Transparent:= Form_engin.Button_multipl.Transparent;
+  Form_base.Button_multipl.Color:= Form_engin.Button_multipl.Color;
+  Form_base.Button_diff.Flat:= Form_engin.Button_diff.Flat;//Button_diff
+  Form_base.Button_diff.Transparent:= Form_engin.Button_diff.Transparent;
+  Form_base.Button_diff.Color:= Form_engin.Button_diff.Color;
+  Form_base.Button_sum.Flat:= Form_engin.Button_sum.Flat;//Button_sum
+  Form_base.Button_sum.Transparent:= Form_engin.Button_sum.Transparent;
+  Form_base.Button_sum.Color:= Form_engin.Button_sum.Color;
+  Form_base.Button_equally.Flat:= Form_engin.Button_equally.Flat;//Button_equally
+  Form_base.Button_equally.Transparent:= Form_engin.Button_equally.Transparent;
+  Form_base.Button_equally.Color:= Form_engin.Button_equally.Color;
 end;
 
 procedure TForm_engin.M_engClick(Sender: TObject);
@@ -205,8 +282,6 @@ begin
      Label4.Caption := Button_s2.Caption;
   if curr_sist = 3 then
      Label4.Caption := Button_s3.Caption;
-  if curr_sist = 10 then
-     Label4.Caption := Button_s10.Caption;
 
 end;
 
@@ -217,13 +292,211 @@ begin
     Label4.Caption := Button_s2.Caption;
   if curr_sist = 3 then
      Label4.Caption := Button_s3.Caption;
-  if curr_sist = 10 then
-     Label4.Caption := Button_s10.Caption;
 
 end;
 
 procedure TForm_engin.M_theme_1Click(Sender: TObject);
 begin
+
+end;
+
+procedure TForm_engin.M_theme_1_1Click(Sender: TObject); //светлая тема
+begin
+  Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\light.jpg');
+end;
+
+procedure TForm_engin.M_theme_1_2Click(Sender: TObject); //темная тема
+begin
+  Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\dark.jpg');
+  Label2.Font.Color:=clWhite;
+end;
+
+procedure TForm_engin.M_theme_1_3Click(Sender: TObject); //детская тема
+begin
+  Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName) + '\children.jpg');
+end;
+
+procedure TForm_engin.M_theme_2_1Click(Sender: TObject);    //обычная тема
+begin
+  Button_percent.Flat:= False;   //Button_percent
+  Button_percent.Transparent:=True;
+  Button_squaring.Flat:= False; //Button_squaring
+  Button_squaring.Transparent:=True;
+  Button_0.Flat:= False;  //Button_0
+  Button_0.Transparent:=True;
+  Button_1.Flat:= False;    //Button_1
+  Button_1.Transparent:=True;
+  Button_2.Flat:= False;    //Button_2
+  Button_2.Transparent:=True;
+  Button_3.Flat:= False;     //Button_3
+  Button_3.Transparent:=True;
+  Button_4.Flat:= False;    //Button_4
+  Button_4.Transparent:=True;
+  Button_5.Flat:= False;     //Button_5
+  Button_5.Transparent:=True;
+  Button_6.Flat:= False;     //Button_6
+  Button_6.Transparent:=True;
+  Button_7.Flat:= False;     //Button_7
+  Button_7.Transparent:=True;
+  Button_8.Flat:= False;     //Button_8
+  Button_8.Transparent:=True;
+  Button_9.Flat:= False;     //Button_9
+  Button_9.Transparent:=True;
+  Button_sqrt.Flat:= False;     //Button_sqrt
+  Button_sqrt.Transparent:=True;
+  Button_changing_sign.Flat:= False;     //Button_changing_sign
+  Button_changing_sign.Transparent:=True;
+  Button_dot.Flat:= False;     //Button_dot
+  Button_dot.Transparent:=True;
+  Button_ce.Flat:= False;     //Button_ce
+  Button_ce.Transparent:=True;
+  Button_c.Flat:= False;     //Button_c
+  Button_c.Transparent:=True;
+  Button_del.Flat:= False;     //Button_del
+  Button_del.Transparent:=True;
+  Button_division.Flat:= False;     //Button_division
+  Button_division.Transparent:=True;
+  Button_multipl.Flat:= False;     //Button_multipl
+  Button_multipl.Transparent:=True;
+  Button_diff.Flat:= False;     //Button_diff
+  Button_diff.Transparent:=True;
+  Button_sum.Flat:= False;     //Button_sum
+  Button_sum.Transparent:=True;
+  Button_equally.Flat:= False;     //Button_equally
+  Button_equally.Transparent:=True;
+  Button_abs.Flat:= False;     //Button_abs
+  Button_abs.Transparent:=True;
+  Button_ln_e.Flat:= False;     //Button_ln_e
+  Button_ln_e.Transparent:=True;
+  Button_ln_10.Flat:= False;     //Button_ln_10
+  Button_ln_10.Transparent:=True;
+  Button_factorial.Flat:= False;     //Button_factorial
+  Button_factorial.Transparent:=True;
+  Button_stepen.Flat:= False;     //Button_stepen
+  Button_stepen.Transparent:=True;
+  Button_cos.Flat:= False;     //Button_cos
+  Button_cos.Transparent:=True;
+  Button_sin.Flat:= False;     //Button_sin
+  Button_sin.Transparent:=True;
+  Button_tg.Flat:= False;     //Button_tg
+  Button_tg.Transparent:=True;
+  Button_ctg.Flat:= False;     //Button_ctg
+  Button_ctg.Transparent:=True;
+  Button_s2.Flat:= False;     //Button_s2
+  Button_s2.Transparent:=True;
+  Button_s3.Flat:= False;     //Button_s3
+  Button_s3.Transparent:=True;
+  Button_s10.Flat:= False;     //Button_s10
+  Button_s10.Transparent:=True;
+end;
+
+procedure TForm_engin.M_theme_2_2Click(Sender: TObject);   //темная тема
+begin
+  Button_percent.Flat:= True;   //Button_percent
+  Button_percent.Transparent:=False;
+  Button_percent.Color:=clActiveCaption;
+  Button_squaring.Flat:= True; //Button_squaring
+  Button_squaring.Transparent:=False;
+  Button_squaring.Color:=clActiveCaption;
+  Button_0.Flat:= True;  //Button_0
+  Button_0.Transparent:=False;
+  Button_0.Color:=clActiveCaption;
+  Button_1.Flat:= True;    //Button_1
+  Button_1.Transparent:=False;
+  Button_1.Color:=clActiveCaption;
+  Button_2.Flat:= True;    //Button_2
+  Button_2.Transparent:=False;
+  Button_2.Color:=clActiveCaption;
+  Button_3.Flat:= True;     //Button_3
+  Button_3.Transparent:=False;
+  Button_3.Color:=clActiveCaption;
+  Button_4.Flat:= True;    //Button_4
+  Button_4.Transparent:=False;
+  Button_4.Color:=clActiveCaption;
+  Button_5.Flat:= True;     //Button_5
+  Button_5.Transparent:=False;
+  Button_5.Color:=clActiveCaption;
+  Button_6.Flat:= True;     //Button_6
+  Button_6.Transparent:=False;
+  Button_6.Color:=clActiveCaption;
+  Button_7.Flat:= True;     //Button_7
+  Button_7.Transparent:=False;
+  Button_7.Color:=clActiveCaption;
+  Button_8.Flat:= True;     //Button_8
+  Button_8.Transparent:=False;
+  Button_8.Color:=clActiveCaption;
+  Button_9.Flat:= True;     //Button_9
+  Button_9.Transparent:=False;
+  Button_9.Color:=clActiveCaption;
+  Button_sqrt.Flat:= True;     //Button_sqrt
+  Button_sqrt.Transparent:=False;
+  Button_sqrt.Color:=clActiveCaption;
+  Button_changing_sign.Flat:= True;     //Button_changing_sign
+  Button_changing_sign.Transparent:=False;
+  Button_changing_sign.Color:=clActiveCaption;
+  Button_dot.Flat:= True;     //Button_dot
+  Button_dot.Transparent:=False;
+  Button_dot.Color:=clActiveCaption;
+  Button_ce.Flat:= True;     //Button_ce
+  Button_ce.Transparent:=False;
+  Button_ce.Color:=clActiveCaption;
+  Button_c.Flat:= True;     //Button_c
+  Button_c.Transparent:=False;
+  Button_c.Color:=clActiveCaption;
+  Button_del.Flat:= True;     //Button_del
+  Button_del.Transparent:=False;
+  Button_del.Color:=clActiveCaption;
+  Button_division.Flat:= True;     //Button_division
+  Button_division.Transparent:=False;
+  Button_division.Color:=clActiveCaption;
+  Button_multipl.Flat:= True;     //Button_multipl
+  Button_multipl.Transparent:=False;
+  Button_multipl.Color:=clActiveCaption;
+  Button_diff.Flat:= True;     //Button_diff
+  Button_diff.Transparent:=False;
+  Button_diff.Color:=clActiveCaption;
+  Button_sum.Flat:= True;     //Button_sum
+  Button_sum.Transparent:=False;
+  Button_sum.Color:=clActiveCaption;
+  Button_equally.Flat:= True;     //Button_equally
+  Button_equally.Transparent:=False;
+  Button_equally.Color:=clActiveCaption;
+  Button_abs.Flat:= True;     //Button_abs
+  Button_abs.Transparent:=False;
+  Button_abs.Color:=clActiveCaption;
+  Button_ln_e.Flat:= True;     //Button_ln_e
+  Button_ln_e.Transparent:=False;
+  Button_ln_e.Color:=clActiveCaption;
+  Button_ln_10.Flat:= True;     //Button_ln_10
+  Button_ln_10.Transparent:=False;
+  Button_ln_10.Color:=clActiveCaption;
+  Button_factorial.Flat:= True;     //Button_factorial
+  Button_factorial.Transparent:=False;
+  Button_factorial.Color:=clActiveCaption;
+  Button_stepen.Flat:= True;     //Button_stepen
+  Button_stepen.Transparent:=False;
+  Button_stepen.Color:=clActiveCaption;
+  Button_cos.Flat:= True;     //Button_cos
+  Button_cos.Transparent:=False;
+  Button_cos.Color:=clActiveCaption;
+  Button_sin.Flat:= True;     //Button_sin
+  Button_sin.Transparent:=False;
+  Button_sin.Color:=clActiveCaption;
+  Button_tg.Flat:= True;     //Button_tg
+  Button_tg.Transparent:=False;
+  Button_tg.Color:=clActiveCaption;
+  Button_ctg.Flat:= True;     //Button_ctg
+  Button_ctg.Transparent:=False;
+  Button_ctg.Color:=clActiveCaption;
+  Button_s2.Flat:= True;     //Button_s2
+  Button_s2.Transparent:=False;
+  Button_s2.Color:=clActiveCaption;
+  Button_s3.Flat:= True;     //Button_s3
+  Button_s3.Transparent:=False;
+  Button_s3.Color:=clActiveCaption;
+  Button_s10.Flat:= True;     //Button_s10
+  Button_s10.Transparent:=False;
+  Button_s10.Color:=clActiveCaption;
 
 end;
 
@@ -335,11 +608,80 @@ begin
   x:=strtofloat(Edit1.Text);
 end;
 
-procedure TForm_engin.Button_s2Click(Sender: TObject);
+function Step(a,b:longint):longint;
+var i,st:longint;
 begin
-<<<<<<< Updated upstream
+  if a=0 then Step:=1
+         else begin
+              st:=1;
+              for i:=1 to a do begin
+                               st:=st*b;
+                               Step:=st;
+                               end;
+              end;
+end;
+function dec_to_bin(dec: Integer): Integer;
+var
+  bin, rank, modulo: Integer;
+begin
+  bin := 0;
+  rank := 1;
+  while dec > 0 do
+  begin
+    modulo := dec mod 2;
+    dec := dec div 2;
+    bin := bin + modulo * rank;
+    rank := rank * 10;
+  end;
+  result := bin;
+end;
+function dec_to_tri(dec: Integer): Integer;
+var
+  bin, rank, modulo: Integer;
+begin
+  bin := 0;
+  rank := 1;
+  while dec > 0 do
+  begin
+    modulo := dec mod 3;
+    dec := dec div 3;
+    bin := bin + modulo * rank;
+    rank := rank * 10;
+  end;
+  result := bin;
+end;
+function bin_to_dec(bin: Integer): Integer;
+var dec, two, rank: Integer;
+begin
+  two := 1;
+  dec := 0;
+  while bin > 0 do
+  begin
+    rank := bin mod 10;
+    bin := bin div 10;
+    dec := dec + rank * two;
+    two := two * 2;
+  end;
+  result := dec;
+end;
+function tri_to_dec(bin: Integer): Integer;
+var dec, two, rank: Integer;
+begin
+  two := 1;
+  dec := 0;
+  while bin > 0 do
+  begin
+    rank := bin mod 10;
+    bin := bin div 10;
+    dec := dec + rank * two;
+    two := two * 3;
+  end;
+  result := dec;
+end;
 
-=======
+procedure TForm_engin.Button_s2Click(Sender: TObject);
+var a,b:integer;
+begin
   curr_sist:=2;
   Label4.Caption := Button_s2.Caption;
   a:=strtoint(Edit1.Text);
@@ -366,7 +708,6 @@ begin
   Edit1.Text:=inttostr(b);
   curr_sist:=10;
   Label4.Caption := Button_s10.Caption;
->>>>>>> Stashed changes
 end;
 
 procedure TForm_engin.Button_sinClick(Sender: TObject);
