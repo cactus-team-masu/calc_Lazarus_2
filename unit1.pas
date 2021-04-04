@@ -434,9 +434,12 @@ end;
 
 procedure TForm_base.Button_percentClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   y:=strtofloat(Edit1.Text);
   z:=x/100*y;
   Edit1.Text:=floattostr(z);
+
+  end;
 end;
 
 procedure TForm_base.Button_cClick(Sender: TObject);
@@ -456,9 +459,12 @@ end;
 
 procedure TForm_base.Button_changing_signClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   x:=strtofloat(Edit1.Text);
   x:=-x;
   Edit1.Text:=floattostr(x);
+
+  end;
 end;
 
 procedure TForm_base.Button_delClick(Sender: TObject);
@@ -477,21 +483,25 @@ end;
 
 procedure TForm_base.Button_dotClick(Sender: TObject);
 begin
-  if pos('.',Edit1.Text)=0 then Edit1.Text:=Edit1.Text + (Sender as TSpeedButton).Caption;
+  if (pos('.',Edit1.Text)=0) and (Edit1.Text<>'') then Edit1.Text:=Edit1.Text + (Sender as TSpeedButton).Caption;
 end;
 
 procedure TForm_base.Button_sqrtClick(Sender: TObject);
 begin
-  x:=strtofloat(Edit1.Text);
-  x:=sqrt(x);
-  Edit1.Text:=floattostr(x);
+  if Edit1.Text<>'' then begin
+                        x:=strtofloat(Edit1.Text);
+                        x:=sqrt(x);
+                        Edit1.Text:=floattostr(x);
+                        end;
 end;
 
 procedure TForm_base.Button_squaringClick(Sender: TObject);
 begin
-  x:=strtofloat(Edit1.Text);
-  x:=sqr(x);
-  Edit1.Text:=floattostr(x);
+  if Edit1.Text<>'' then begin
+                        x:=strtofloat(Edit1.Text);
+                        x:=sqr(x);
+                        Edit1.Text:=floattostr(x);
+                        end;
 end;
 
 end.

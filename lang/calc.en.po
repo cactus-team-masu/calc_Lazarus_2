@@ -420,28 +420,16 @@ msgstr ""
 msgid "Расширенный режим"
 msgstr "Engineering mode"
 
-#: tform_engin.label1.caption
-#, fuzzy
-msgctxt "tform_engin.label1.caption"
-msgid "Ошибка!"
-msgstr "Error!"
-
 #: tform_engin.label2.caption
 msgid "Системы счисления"
 msgstr "Numeral system"
 
-<<<<<<< Updated upstream
-=======
 #: tform_engin.label3.caption
-msgid "Текущая система счисления:"
+#, fuzzy
+#| msgid "Текущая система счисления:"
+msgid "Текущая система счисления: десятичная"
 msgstr "Current number system:"
 
-#: tform_engin.label4.caption
-msgctxt "tform_engin.label4.caption"
-msgid "Десятичная"
-msgstr "Decimal"
-
->>>>>>> Stashed changes
 #: tform_engin.menu_themes.caption
 msgctxt "tform_engin.menu_themes.caption"
 msgid "Тема"
@@ -568,7 +556,6 @@ msgid ""
 "Интерфейс приложения доступен на 2-х языках: русском и английском.\n"
 "\n"
 "Программа имеет 3 темы оформления.\n"
-
 msgstr ""
 "This program is an analog of an electronic calculator.\n"
 "It is designed to perform the simplest arithmetic operations. \n"
@@ -584,3 +571,4 @@ msgstr ""
 "The app interface is available in 2 languages: Russian and English.\n"
 "\n"
 "The program has 3 themes.\n"
+

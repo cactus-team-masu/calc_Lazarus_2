@@ -414,27 +414,14 @@ msgstr ""
 msgid "Расширенный режим"
 msgstr ""
 
-#: tform_engin.label1.caption
-msgctxt "tform_engin.label1.caption"
-msgid "Ошибка!"
-msgstr ""
-
 #: tform_engin.label2.caption
 msgid "Системы счисления"
 msgstr ""
 
-<<<<<<< Updated upstream
-=======
 #: tform_engin.label3.caption
-msgid "Текущая система счисления:"
+msgid "Текущая система счисления: десятичная"
 msgstr ""
 
-#: tform_engin.label4.caption
-msgctxt "tform_engin.label4.caption"
-msgid "Десятичная"
-msgstr ""
-
->>>>>>> Stashed changes
 #: tform_engin.menu_themes.caption
 msgctxt "tform_engin.menu_themes.caption"
 msgid "Тема"

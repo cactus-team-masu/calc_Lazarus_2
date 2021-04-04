@@ -144,9 +144,12 @@ end;
 
 procedure TForm_engin.Button_absClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   x:= StrToFloat(Edit1.Text);
   z:=abs(x);
   Edit1.Text:=FloatToStr(z);
+
+  end;
 end;
 
 procedure TForm_engin.Button_sumClick(Sender: TObject);
@@ -160,6 +163,7 @@ end;
 
 procedure TForm_engin.Button_tgClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   Label1.Visible := false;
   x:=strtofloat(Edit1.Text);    //принимаем в градусах
   if x <> 90 then begin
@@ -168,6 +172,8 @@ begin
                     Edit1.Text:=floattostr(z);
                   end
   else Label1.Visible := true;
+
+  end;
 end;
 
 procedure TForm_engin.Label3Click(Sender: TObject);
@@ -535,25 +541,34 @@ end;
 
 procedure TForm_engin.Button_changing_signClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   x:=strtofloat(Edit1.Text);
   x:=-x;
   Edit1.Text:=floattostr(x);
+
+  end;
 end;
 
 procedure TForm_engin.Button_cosClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   x:=strtofloat(Edit1.Text);    //принимаем в градусах
   x:=DegToRad(x); //перевод в радианы
   z:=Cos(x);
   Edit1.Text:=floattostr(z);
+
+  end;
 end;
 
 procedure TForm_engin.Button_ctgClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   x:=strtofloat(Edit1.Text);    //принимаем в градусах
   x:=DegToRad(x); //перевод в радианы
   z:=Cot(x);
   Edit1.Text:=floattostr(z);
+
+  end;
 end;
 
 procedure TForm_engin.Button_delClick(Sender: TObject);
@@ -568,7 +583,7 @@ end;
 
 procedure TForm_engin.Button_dotClick(Sender: TObject);
 begin
-  if pos('.',Edit1.Text)=0 then Edit1.Text:=Edit1.Text + (Sender as TSpeedButton).Caption;
+  if (pos('.',Edit1.Text)=0) and (Edit1.Text<>'') then Edit1.Text:=Edit1.Text + (Sender as TSpeedButton).Caption;
 end;
 
 function Factorial(n: integer): integer;
@@ -580,46 +595,45 @@ end;
 procedure TForm_engin.Button_factorialClick(Sender: TObject);
 var i,k:integer;
 begin
+  if Edit1.Text<>'' then begin
   i:=StrToInt(Edit1.Text);
   k:=Factorial(i);
   Edit1.Text:=IntToStr(k);
   x:=strtofloat(Edit1.Text);
+
+  end;
 end;
 
 procedure TForm_engin.Button_ln_10Click(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   x:=strtofloat(Edit1.Text);
   x:=ln(x)/ln(10);
   Edit1.Text:=floattostr(x);
+  end;
 end;
 
 procedure TForm_engin.Button_ln_eClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   x:=strtofloat(Edit1.Text);
   x:=ln(x);
   Edit1.Text:=floattostr(x);
+
+  end;
 end;
 
 procedure TForm_engin.Button_percentClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   y:=strtofloat(Edit1.Text);
   z:=x/100*y;
   Edit1.Text:=floattostr(z);
   x:=strtofloat(Edit1.Text);
+
+  end;
 end;
 
-function Step(a,b:longint):longint;
-var i,st:longint;
-begin
-  if a=0 then Step:=1
-         else begin
-              st:=1;
-              for i:=1 to a do begin
-                               st:=st*b;
-                               Step:=st;
-                               end;
-              end;
-end;
 function dec_to_bin(dec: Integer): Integer;
 var
   bin, rank, modulo: Integer;
@@ -682,54 +696,68 @@ end;
 procedure TForm_engin.Button_s2Click(Sender: TObject);
 var a,b:integer;
 begin
+  if Edit1.Text<>'' then begin
   curr_sist:=2;
   Label4.Caption := Button_s2.Caption;
   a:=strtoint(Edit1.Text);
   b:=dec_to_bin(a);
   Edit1.Text:=inttostr(b);
+
+  end;
 end;
 
 procedure TForm_engin.Button_s3Click(Sender: TObject);
 var a,b:integer;
 begin
+  if Edit1.Text<>'' then begin
   curr_sist:=3;
   Label4.Caption := Button_s3.Caption;
   a:=strtoint(Edit1.Text);
   b:=dec_to_tri(a);
   Edit1.Text:=inttostr(b);
+
+  end;
 end;
 
 procedure TForm_engin.Button_s10Click(Sender: TObject);
 var a,b:integer;
 begin
+  if Edit1.Text<>'' then begin
   a:=strtoint(Edit1.Text);
   if curr_sist=2 then b:=bin_to_dec(a);
   if curr_sist=3 then b:=tri_to_dec(a);
   Edit1.Text:=inttostr(b);
   curr_sist:=10;
   Label4.Caption := Button_s10.Caption;
+  end;
 end;
 
 procedure TForm_engin.Button_sinClick(Sender: TObject);
 begin
+  if Edit1.Text<>'' then begin
   x:=strtofloat(Edit1.Text);    //принимаем в градусах
   x:=DegToRad(x); //перевод в радианы
   z:=Sin(x);
   Edit1.Text:=floattostr(z);
+  end;
 end;
 
 procedure TForm_engin.Button_sqrtClick(Sender: TObject);
 begin
-  x:=strtofloat(Edit1.Text);
-  x:=sqrt(x);
-  Edit1.Text:=floattostr(x);
+  if Edit1.Text<>'' then begin
+                          x:=strtofloat(Edit1.Text);
+                          x:=sqrt(x);
+                          Edit1.Text:=floattostr(x);
+                          end;
 end;
 
 procedure TForm_engin.Button_squaringClick(Sender: TObject);
 begin
-  x:=strtofloat(Edit1.Text);
-  x:=sqr(x);
-  Edit1.Text:=floattostr(x);
+   if Edit1.Text<>'' then begin
+                          x:=strtofloat(Edit1.Text);
+                          x:=sqr(x);
+                          Edit1.Text:=floattostr(x);
+                         end;
 end;
 
 procedure TForm_engin.Button_stepenClick(Sender: TObject);
